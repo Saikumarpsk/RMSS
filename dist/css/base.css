@@ -1,4 +1,10 @@
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);/*!
+ *   AdminLTE v2.3.5
+ *   Author: Almsaeed Studio
+ *	 Website: Almsaeed Studio <http://almsaeedstudio.com>
+ *   License: Open source - MIT
+ *           Please visit http://opensource.org/licenses/MIT for more information
+!*/
 html, body {
 	min-height: 100%
 }
@@ -41,7 +47,7 @@ body {
 	-moz-transition: -moz-transform .3s ease-in-out, margin .3s ease-in-out;
 	-o-transition: -o-transform .3s ease-in-out, margin .3s ease-in-out;
 	transition: transform .3s ease-in-out, margin .3s ease-in-out;
-/*	margin-left: 230px;*/
+	margin-left: 252px;
 	z-index: 820
 }
 .layout-top-nav .content-wrapper, .layout-top-nav .right-side, .layout-top-nav .main-footer {
@@ -88,7 +94,7 @@ body {
 	left: 0
 }
 .fixed .content-wrapper, .fixed .right-side {
-	padding-top: 50px
+	padding-top: 80px
 }
 
 @media (max-width:767px) {
@@ -349,11 +355,11 @@ color:#ccc
 }
 .main-sidebar, .left-side {
 	position: absolute;
-	top: 0;
+	top: 90px;
 	left: 0;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 	min-height: 100%;
-	width: 230px;
+	width: 252px;
 	z-index: 810;
 	-webkit-transition: -webkit-transform .3s ease-in-out, width .3s ease-in-out;
 	-moz-transition: -moz-transform .3s ease-in-out, width .3s ease-in-out;
@@ -443,8 +449,9 @@ color:#ccc
 }
 .sidebar-menu>li {
 	position: relative;
-	margin: 0;
-	padding: 0
+	margin: 0 20px;
+	padding: 0;
+	
 }
 .sidebar-menu>li>a {
 	padding: 12px 5px 12px 15px;
@@ -489,10 +496,10 @@ color:#ccc
 	padding-left: 20px
 }
 .sidebar-menu .treeview-menu>li {
-	margin: 0
+	margin: 0; border-left: solid 1px #5c96ff;
 }
 .sidebar-menu .treeview-menu>li>a {
-	padding: 5px 5px 5px 15px;
+	padding: 10px 5px 10px 15px;
 	display: block;
 	font-size: 14px
 }
@@ -505,7 +512,7 @@ color:#ccc
 
 @media (min-width:768px) {
 .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side, .sidebar-mini.sidebar-collapse .main-footer {
-	margin-left: 50px !important;
+	margin-left:0px !important;
 	z-index: 840
 }
 .sidebar-mini.sidebar-collapse .main-sidebar {
@@ -513,7 +520,7 @@ color:#ccc
 	-ms-transform: translate(0, 0);
 	-o-transform: translate(0, 0);
 	transform: translate(0, 0);
-	width: 50px !important;
+	width: 0px !important;
 	z-index: 850
 }
 .sidebar-mini.sidebar-collapse .sidebar-menu>li {
@@ -575,7 +582,7 @@ color:#ccc
 	display: none
 }
 .sidebar-mini.sidebar-collapse .main-header .navbar {
-	margin-left: 50px
+	margin-left: 0px
 }
 }
 .sidebar-menu, .main-sidebar .user-panel, .sidebar-menu>li.header {
