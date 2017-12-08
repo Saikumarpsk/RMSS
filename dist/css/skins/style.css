@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-BoldItalic.eot');
+	src: url('Aller-BoldItalic.eot?#iefix') format('embedded-opentype'), url('Aller-BoldItalic.woff') format('woff'), url('Aller-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-LightItalic.eot');
+	src: url('Aller-LightItalic.eot?#iefix') format('embedded-opentype'), url('Aller-LightItalic.woff') format('woff'), url('Aller-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Allerlight';
+	src: url('Aller-Light.eot');
+	src: url('Aller-Light.eot?#iefix') format('embedded-opentype'), url('Aller-Light.woff') format('woff'), url('Aller-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller Display';
+	src: url('AllerDisplay.eot');
+	src: url('AllerDisplay.eot?#iefix') format('embedded-opentype'), url('AllerDisplay.woff') format('woff'), url('AllerDisplay.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller.eot');
+	src: url('Aller.eot?#iefix') format('embedded-opentype'), url('Aller.woff') format('woff'), url('Aller.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-Italic.eot');
+	src: url('Aller-Italic.eot?#iefix') format('embedded-opentype'), url('Aller-Italic.woff') format('woff'), url('Aller-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-Bold.eot');
+	src: url('Aller-Bold.eot?#iefix') format('embedded-opentype'), url('Aller-Bold.woff') format('woff'), url('Aller-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+._logo{ }

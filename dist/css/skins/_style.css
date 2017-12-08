@@ -1,0 +1,430 @@
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-BoldItalic.eot');
+	src: url('Aller-BoldItalic.eot?#iefix') format('embedded-opentype'), url('Aller-BoldItalic.woff') format('woff'), url('Aller-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-LightItalic.eot');
+	src: url('Aller-LightItalic.eot?#iefix') format('embedded-opentype'), url('Aller-LightItalic.woff') format('woff'), url('Aller-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Allerlight';
+	src: url('Aller-Light.eot');
+	src: url('Aller-Light.eot?#iefix') format('embedded-opentype'), url('Aller-Light.woff') format('woff'), url('Aller-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller Display';
+	src: url('AllerDisplay.eot');
+	src: url('AllerDisplay.eot?#iefix') format('embedded-opentype'), url('AllerDisplay.woff') format('woff'), url('AllerDisplay.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller.eot');
+	src: url('Aller.eot?#iefix') format('embedded-opentype'), url('Aller.woff') format('woff'), url('Aller.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-Italic.eot');
+	src: url('Aller-Italic.eot?#iefix') format('embedded-opentype'), url('Aller-Italic.woff') format('woff'), url('Aller-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Aller';
+	src: url('Aller-Bold.eot');
+	src: url('Aller-Bold.eot?#iefix') format('embedded-opentype'), url('Aller-Bold.woff') format('woff'), url('Aller-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+._logo{ font-size: 24px; padding: 21px 18px; display: inline; float: left;
+	background-color: #f8f8f8;	color: #1350be; text-transform: uppercase; width: 252px;}
+._logo > img{ height:auto; width: 67px; }
+._logo > strong{ font-weight:bold; }
+
+
+.sidebar-toggle{ top: 350px; position: absolute; z-index: 9999}
+.sidebar-toggle>span{ /*background: rgba(1,11,28,0.5); height: 30px; width: 50px; padding: 10px 18px 10px 40px; border-radius: 100%; color: #FFF; font-size: 3rem; display: table; margin-left: -35px;*/}
+.input-group .color{ color: #5c96ff !important;}
+
+.bottom-icons{}
+.bottom-icons > ul {
+	margin: 0 20px;
+	padding: 0px;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.bottom-icons > ul > li {
+	
+	list-style: none;	
+	margin: 0px 5px;
+	float: left;
+	text-align: center;
+	padding: 2% 8%;
+	color: #fff;
+	font-size: 20px; display: inline-block; color: #8da9d6;
+}
+.bottom-icons > ul > li:hover, .bottom-icons > ul > li.active {
+	border-bottom: solid 4px #0096f8; color: #FFF;
+}
+
+/*----------praven-----------*/
+
+/*----------filter-sec start-----------*/
+.filter-sec .filter-button {
+	background-color: #038ae2;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+}
+.filter-button>button {	
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.filter-sec .modal-dialog {
+	position: fixed;
+	bottom: 1%;
+	right: 0%;
+	width: 480px;
+}
+.filter-sec .modal-content {
+	background: none !important;
+}
+.filter-sec .modal-body .filter-icon {
+	float: left;
+	margin: 10px;
+}
+.filter-sec .modal-body .filter-icon button {
+	background: none !important;
+	border: none !important
+}
+.filter-icon> button> .modal-dialog .filtericon-search {
+	width: 100px;
+}
+.filtericon-search {
+	width: 60%;
+    margin: 30px 0px 28px 0;
+    background: #fff;
+    padding: 20px;
+    color: #1350be;
+}
+.filtericon-search:after {
+	content: "";
+	border-right: 10px solid transparent;
+	border-top: 15px solid #fff;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	bottom: 10%;
+}
+.filtericon-search >div> input{ border-bottom:solid 1px #CCC; width:100%; border-top:solid 1px transparent; border-right:solid 1px transparent; border-left:solid 1px transparent; margin: 0px; padding: 0px;}
+/*----------filter-sec end-----------*/
+
+.filtericon-search >div> input:focus, .filtericon-search >div> input:visited {   border-bottom:solid 1px #3c8dbc; width:100%; border-top:solid 1px transparent; border-right:solid 1px transparent; border-left:solid 1px transparent;}
+
+
+.marker-sec {
+	display: block;
+	position: absolute;
+	left: 77%;
+	top: 130px;
+}
+
+.marker-sec .btn-ground .btn-primary {
+	background: none;
+	border: none;
+}
+.marker-sec .modal-header {
+	border-bottom-color: #030f27;
+	background: #030f27;
+	color: #fff;
+}
+.marker-sec .modal-body {
+	border-bottom-color: #030f27;
+	background: #030f27;
+	opacity: .9;
+	color: #616672;
+}
+.marker-sec .modal-dialog {
+	width: 530px;
+	margin: 145px 117px 30px 495px;
+}
+.marker-sec .modal-dialog:after {
+	content: "";
+	border-right: 10px solid transparent;
+	border-top: 15px solid #030f27;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 72px;
+	transform: rotate(270deg);
+	right: -22px;
+}
+.wel-sec i {
+	color: #00ac56;
+}
+.wel-sec h3 span {
+	border-bottom: 2px solid #0087e6;
+}
+.marker-sec .modal {
+	background: none;
+}
+.wel-sec .temparature-text {
+	font-size: 10px;
+	position: absolute;
+	top: 2;
+	left: 2;
+}
+.marker-sec .modal-content {
+	border-left: 1px solid #0087e6;
+}
+.marker-sec .modal-body .wellsec-bodyrighttext {
+	color: #fff;
+}
+.marker-sec .modal-body .btn-ground .btn-primary {
+	background: none;
+	border: 1px solid #038ae2 !important;
+	border-radius: 25px;
+	height: 30px;
+	margin: 0 15px;
+}
+.marker-sec .progress {
+	height: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #0b388b;
+	border-radius: 14px !important;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.marker-sec .progress .progress-bar-green, .progress-bar-success {
+	background-color: #285099;
+}
+.marker-sec .progress-text {
+	line-height: 16px;
+}
+/*----------allarm notification sec-----------*/
+
+.alarm-notification-sec {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 13px;
+}
+.alarm-notification-sec .btn-ground .btn-primary {
+	background: none;
+	border: none;
+}
+.alarm-notification-sec .modal-header {
+	border-bottom-color: #ffffff;
+	background: #ffffff;
+	color: #000;
+}
+.alarm-notification-sec .modal-body {
+	border-bottom-color: #ffffff;
+	background: #ffffff;
+	opacity: .9;
+	color: #000;
+}
+.alarm-notification-sec .modal-dialog {
+	width: 700px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+}
+.alarm-notification-sec .modal {
+	background: none;
+}
+.alarm-notification-sec .modal-content {
+	border-left: 1px solid #000;
+}
+.alarm-notification-sec .modal-content h3 {
+	color: #1350be;
+	font-weight: normal;
+}
+.alarm-notification-sec .modal-content h3 span {
+	border-bottom: 2px solid #1350be;
+}
+.alarm-notification-sec .dashedborder-vlow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px dashed #078e63;
+	font-size: 16px;
+	padding: 12px;
+}
+.alarm-notification-sec .dashedborder-vhigh {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px dashed #ef7938;
+	font-size: 16px;
+	padding: 12px;
+}
+.alarm-notification-sec .dashedborder-low {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px dashed #19b3eb;
+	font-size: 16px;
+	padding: 12px;
+}
+.alarm-notification-sec .dashedborder-high {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px dashed #6f349d;
+	font-size: 16px;
+	padding: 12px;
+}
+.alarm-notification-sec th {
+	background-color: #051129;
+	color: #fff;
+}
+.marg-t-15 {
+	margin-top: 15px;
+}
+.alarm-notification-search .form-control {
+	border-radius: 30px;
+}
+.alarm-notification-sec .text-red {
+	color: #fd0013 !important;
+}
+.alarm-notification-sec .text-orange {
+	color: #c4591f !important;
+}
+.alarm-notification-sec .text-yellow {
+	color: #efa400 !important;
+}
+.alarm-notification-sec .text-brown {
+	color: #bf8f22 !important;
+}
+.alarm-notification-sec .text-green {
+	color: #55813c !important;
+}
+.alarm-notification-sec .text-blue {
+	color: #677388 !important;
+}
+.alarm-notification-sec .btn-primary {
+	background-color: #3c8dbc;
+	border-color: #367fa9;
+}
+.alarm-notification-sec .btn-primary:hover {
+	background-color: #1e293f;
+	border-color: #1e293f;
+}
+/*----------allarm notification sec end-----------*/
+
+#overlay{ /* we set all of the properties for are overlay */
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    background:rgba(0,0,0,0.8);
+    color:black;
+    padding:10px;
+    position:absolute;
+    top:0%;
+    left:0%;
+    z-index:1000;
+    display:none;
+    /* CSS 3 */
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    -o-border-radius:0px;
+    border-radius:0px; z-index: 9999999;
+}
+
+#mask{ /* create are mask */
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:500;
+    width:100%;
+    height:100%;
+    display:none;
+}
+/* use :target to look for a link to the overlay then we find are mask */
+#overlay:target, #overlay:target + #mask{
+    display:block;
+    opacity:1;
+}
+#overlay .close_btn{ /* to make a nice looking pure CSS3 close button */
+    /*display:block;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background:red;
+    color:white;
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:35px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -o-border-radius:40px;
+    border-radius:40px; */
+}
+#overlay .close_btn {
+   
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+   /* filter: alpha(opacity=20);*/
+    opacity: 1 !important;
+}
+#open-overlay{    color: #FFF;}
+
+.overlay-icons{bottom: 30px;  right: 30px; position: absolute;}
+.overlay-icons > ul{ margin: 0px; padding: 0px;}
+.overlay-icons > ul > li{ display: inline-block; margin: 5px; }
+.overlay-icons > ul > li > a{}
+
+.pop-up {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background: #FFF;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+    font-size: 10px;
+    bottom: 85px;
+    border-radius: 0px; margin: 0px 0px 0px -120px;
+}
+.pop-up h3{ color: #1350be; font-size: 18px; margin:15px 0px ; padding: 0px; font-weight: 700;}
+.pop-up input[type=text], .pop-up input[type=search] { border-bottom: solid 1px #CCC; width: 100%; border-top: solid 1px transparent; border-right: solid 1px transparent;  border-left: solid 1px transparent;    margin: 0px;    padding:5px; height: 40px; font-size: 14px;}
+.arrow-down { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #FFF; text-align: center;  bottom: -20px;  position: absolute; margin: 0px 0px 0px 120px;}
+
+
+
