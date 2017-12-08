@@ -89,8 +89,8 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     padding: 15px;
     text-align: center;
@@ -373,7 +373,7 @@
     display:block;
     opacity:1;
 }
-#overlay .close{ /* to make a nice looking pure CSS3 close button */
+#overlay .close_btn{ /* to make a nice looking pure CSS3 close button */
     /*display:block;
     position:absolute;
     bottom:20px;
@@ -392,7 +392,7 @@
     -o-border-radius:40px;
     border-radius:40px; */
 }
-#overlay .close {
+#overlay .close_btn {
    
     font-size: 21px;
     font-weight: 700;
@@ -402,15 +402,29 @@
    /* filter: alpha(opacity=20);*/
     opacity: 1 !important;
 }
-#open-overlay{ /* open the overlay */
-    padding:10px 5px;
-    background:blue;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin:20px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -o-border-radius:10px;
-    border-radius:10px;
+#open-overlay{    color: #FFF;}
+
+.overlay-icons{bottom: 30px;  right: 30px; position: absolute;}
+.overlay-icons > ul{ margin: 0px; padding: 0px;}
+.overlay-icons > ul > li{ display: inline-block; margin: 5px; }
+.overlay-icons > ul > li > a{}
+
+.pop-up {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background: #FFF;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+    font-size: 10px;
+    bottom: 85px;
+    border-radius: 0px; margin: 0px 0px 0px -120px;
 }
+.pop-up h3{ color: #1350be; font-size: 18px; margin:15px 0px ; padding: 0px; font-weight: 700;}
+.pop-up input[type=text], .pop-up input[type=search] { border-bottom: solid 1px #CCC; width: 100%; border-top: solid 1px transparent; border-right: solid 1px transparent;  border-left: solid 1px transparent;    margin: 0px;    padding:5px; height: 40px; font-size: 14px;}
+.arrow-down { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #FFF; text-align: center;  bottom: -20px;  position: absolute; margin: 0px 0px 0px 120px;}
+
+
+
