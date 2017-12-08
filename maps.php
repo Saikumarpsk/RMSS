@@ -85,9 +85,40 @@
                             </div>
                             <div class="col-lg-12">
                               <div class="allarm-events">
+                                  <?php
+                 
+                 $scrollingalaram =  "select distinct(asset_id),status,Alarm_type from assets_alarams where user_id = 1  order by id desc limit 10";
+                      $resultscrollingalaram = mysql_query($scrollingalaram, $link);
+                
+                      ?>
                                 <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
-                                Allarm Events Screoll Here.....
-                                </marquee>
+                     <?php
+                          while($scrolingalaramval = mysql_fetch_assoc($resultscrollingalaram))
+                            {
+                             //echo "<pre>";print_r($scrolingalaramval); 
+                            
+                          ?>
+                         
+<!--                          Allarm Events Screoll Here.....-->
+
+<?php  if ( $scrolingalaramval['status']=='Failed'){ ?>
+              <i class="fa fa-circle text-red" ></i>                   
+<?php   } elseif($scrolingalaramval['status']=='Stopped'){ ?>
+              <i class="fa fa-circle text-orange" ></i>       
+  <?php }elseif(($scrolingalaramval['status']=='WO Pull')){ ?>
+<i class="fa fa-circle text-aqua" ></i>
+<?php }elseif($scrolingalaramval['status']=='Running'){ ?>
+<i class="fa fa-circle text-green" ></i>
+<?php }elseif($scrolingalaramval['status']=='WO Instal'){ ?>
+<i class="fa fa-circle text-blue" ></i>                        
+                           <?php }?>
+
+                        <?php echo $scrolingalaramval['asset_id'] ?>
+                            <?php  echo $scrolingalaramval['Alarm_type'] ?>
+                        
+             <?php }?>            
+                        
+                      </marquee>
                               </div>
                             </div>
                         </div>
