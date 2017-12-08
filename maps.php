@@ -5,7 +5,7 @@
 <div class="wrapper">
   <?php include_once 'header.php'; ?>
   
-  <?php include_once 'leftPanel.php'; ?>
+  <?php //include_once 'leftPanel.php'; ?>
     
     <?php
     
@@ -27,20 +27,77 @@
     ?>
     
   
+    <aside class="main-sidebar"> 
+    <section class="sidebar">
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control color" placeholder="Search...">
+          <span class="input-group-btn">
+          <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
+          </span> </div>
+      </form>
+        <form id="mapForm">
+            
+            <div id="asset_res">
+        
+        
+        
+                </div>
+        </form>
+        <div class="bottom-icons">
+          <ul>
+            <li class="active"> <i class="fa fa-star-o"></i></li>
+            <li > <i class="fa fa-circle-o "></i></li>          
+            <li> <i class="fa fa-exclamation-triangle"></i></li>
+          </ul>
+        </div>
+    </section>
+    <!-- /.sidebar --> 
+  </aside>
+    
+    
+    
+    
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper"> 
 	  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> <img src="dist/img/arrow-menu.png" alt="" /> </span> </a>
-    
-    
+    <style>
+                #map-canvas {
+                    height:400px;
+                    width:1024px;
+                }
+                .gm-style-iw * {
+                    display: block;
+                    width: 100%;
+                }
+                .gm-style-iw h4, .gm-style-iw p {
+                    margin: 0;
+                    padding: 0;
+                }
+                .gm-style-iw a {
+                    color: #4272db;
+                }
+            </style>
+        
+            <div id="map-canvas"> </div>
+   
     <!-- Main content -->
     <section class="content">
       <div class="row">
         <div class="col-md-12">
         
          
-          
-           
-<!--             <img src="dist/img/map.jpg" alt="" />-->
+            <div id="map" class="map-sec">
+              
+            </div>
+           <div class="col-lg-12">
+                    <div class="allarm-events">
+                      <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
+                      Allarm Events Screoll Here.....
+                      </marquee>
+                    </div>
+                  </div>
+             
              
 
                     
@@ -73,26 +130,26 @@
           <div class="arrow-down"></div>
         </div>
           
-          <div class="pop-up" id ="val_2">
-          <h3>second popup</h3>
-          <div id="company_res"></div>
-          <a href="#product_view3" data-toggle="modal" data-dismiss="modal"><input type="button" id="submit_company"  value="submit"></a>
-          <div class="arrow-down"></div>
+        <div class="pop-up" id ="val_2">
+            <h3>second popup</h3>
+            <div id="company_res"></div>
+            <input type="button" id="submit_company"  value="submit">
+            <div class="arrow-down"></div>
         </div>
           
-          <div class="pop-up" id ="val_3"     >
+        <div class="pop-up" id ="val_3"     >
           <h3>Third popup</h3>
           <div id="fields_res"></div>
-          <a href="#" data-toggle="modal" data-dismiss="modal"> <input type="button" id="submit_field"  value="submit"></a>
+          <input type="button" id="submit_field"  value="submit">
           <div class="arrow-down"></div>
         </div>
           
-          <div class="pop-up" id ="val_4"     >
+<!--          <div class="pop-up" id ="val_4"     >
           <h3>Forth popup</h3>
           <div id="assets_res"></div>
           <a href="#" data-toggle="modal" data-dismiss="modal"> <input type="button" id="submit_field"  value="submit"></a>
           <div class="arrow-down"></div>
-        </div>
+        </div>-->
           
       </div>
     </div>
@@ -118,43 +175,24 @@
 <!-- ./wrapper --> 
 <!-- jQuery 2.2.3 --> 
 <?php include_once 'root_below.php'; ?>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script> 
+
+<!--<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYQPAkMd4xAzjUq5UnBIfatKdYE0CCg&extension=.js'></script>-->
+
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYQPAkMd4xAzjUq5UnBIfatKdYE0CCg&extension=.js'></script> 
 <script type="text/javascript">
 	$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
+            $('[data-toggle="popover"]').popover();   
+        });
 
-    $(function() {
-      $('.table-scroll').slimscroll({
-      height: '151px'
-      });
-		$(".menuscroller").slimscroll({
-      height: '120px'
-      });
-    });
-
-
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-
-                var mapOptions = {
-                    zoom: 11,
-
-                    center: new google.maps.LatLng(40.6700, -73.9400), 
-                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#146474"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#021019"}]}]
-                };
-
-                var mapElement = document.getElementById('map');
-
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
+        $(function() {
+          $('.table-scroll').slimscroll({
+          height: '151px'
+          });
+                    $(".menuscroller").slimscroll({
+          height: '120px'
+          });
+        });
+            
         </script>
         <script>
             $(document).ready(function(){
@@ -162,7 +200,7 @@
                     $(".pop-up").toggle();
                     $("#val_2").hide();
                     $("#val_3").hide();
-                    $("#val_4").hide();
+                    //$("#val_4").hide();
                     
                 });
             });
@@ -242,53 +280,156 @@ $("#submit_company").click(function(){
 <script>
 $("#submit_field").click(function(){
 
-/*	var myArray = [];
-   $(":checkbox:checked").each(function() {
-       myArray.push(this.value);
-   });
-*/    
-//   var values=myArray.join(",");
- 
- $("#val_4").show();
- 
-var cust_id = document.cookie;
+    //$("#val_4").show();
+     $("#val_3").hide();
+    var cust_id = document.cookie;
 
-var valid_cust_id=cust_id.split(";");
-var final_cust_id=valid_cust_id[0];
-var cheValues =$(':Checkbox:checked').map(function() {return this.value;}).get().join(',');// alert(cheValues);return false;
+    var valid_cust_id=cust_id.split(";");
+    var final_cust_id=valid_cust_id[0];
+    var cheValues =$(':Checkbox:checked').map(function() {return this.value;}).get().join(',');// alert(cheValues);return false;
 
-$.post("ajax.php",  {'cust_id' : final_cust_id , condition_type: 3 , 'fields': cheValues}  , function(response){
-$("#map").show();  
- $("#mygraph").hide();  
-var asset_loc_lat = [];
-               var asset_loc_long = [];
-               var asset_id = [];
-var asset_name = [];
 
- //alert(response); return false;  
-$("#assets_res").html(response);
+        $.ajax({
 
-/*$("#checkDiv").append("<li><div class='check-selectall'> <input id='checkbox' type='checkbox' disabled checked ='checked'/> <label for='checkbox'> Select All </label></div></li>	"); 
-$("#asset_res").html(response);
-$.each($('#mapForm').serializeArray(), function(index, value){
-                   //alert($('[name="' + value.name + '"]').attr('lat') + $('[name="' + value.name + '"]').attr('long'));
-                   asset_loc_lat.push($('[name="' + value.name + '"]').attr('lat'));
-                   asset_loc_long.push($('[name="' + value.name + '"]').attr('long'));
-                   asset_id.push($('[name="' + value.name + '"]').val());
-   asset_name.push($('[name="' + value.name + '"]').attr('asset_name'));
+            url : 'ajax.php',
+            type : 'POST',
+            data : {
+                cust_id : final_cust_id,
+                condition_type: '3',
+                fields: cheValues
+            },
+            success : function(response) {
+                //alert(response);
+                //$("html").empty();
+                //$("html").append(completeHtmlPage);
+                $("#asset_res").html(response);
+                var asset_loc_lat = [];
+                var asset_loc_long = [];
+                var asset_id = [];
+		var asset_name = [];
+                
+               var values = $('input[name="checkbox1"]').map(function() {
+                    asset_loc_lat.push($(this).attr('lat'));
+                    asset_loc_long.push($(this).attr('long'));
+                    asset_id.push($(this).val());
+                    asset_name.push($(this).attr('asset_name'));
+                }).get();
+                
+                
+//                $.each($('#mapForm').serializeArray(), function(index, value){
+//                    alert($('[name="' + value.name + '"]').attr('lat') + $('[name="' + value.name + '"]').attr('long'));
+//                    asset_loc_lat.push($('[name="' + value.name + '"]').attr('lat'));
+//                    asset_loc_long.push($('[name="' + value.name + '"]').attr('long'));
+//                    asset_id.push($('[name="' + value.name + '"]').val());
+//		    asset_name.push($('[name="' + value.name + '"]').attr('asset_name'));
+//	
+//                });
+                console.log(asset_loc_lat);
+                console.log(asset_loc_long);
+                console.log(asset_id);
+              
+              google.maps.event.addDomListener(window, 'click', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(45.0735671,7.67406040000003),
+            zoom: 2,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: false,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: true,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: true,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#146474"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#021019"}]}],
+        }
+        
+        var mapElement = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var innerArry = [];
+        var locations = [];
+        for(ass_id = 0;ass_id < asset_id.length;ass_id++){
+            locations.push(['Headquarter', '<address>Via Ottavio Assarotti, 10 - Torino <br /> 10122 Italy</address>', 'Phone: +39 011 549444', 'undefined',
+'undefined', asset_loc_lat[ass_id], asset_loc_long[ass_id], 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']);
 
-               });
-               console.log(asset_loc_lat);
-               console.log(asset_loc_long);
-               console.log(asset_id);
-load(asset_id,asset_loc_lat,asset_loc_long,asset_name) ;*/
-          
+        }
+        console.log(locations);
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+            if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+            if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+     }
+ function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+      var infoWindowVisible = (function () {
+              var currentlyVisible = false;
+              return function (visible) {
+                  if (visible !== undefined) {
+                      currentlyVisible = visible;
+                  }
+                  return currentlyVisible;
+               };
+           }());
+           iw = new google.maps.InfoWindow();
+           google.maps.event.addListener(marker, 'click', function() {
+               if (infoWindowVisible()) {
+                   iw.close();
+                   infoWindowVisible(false);
+               } else {
+                   var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"+email+"<a></div>";
+                   iw = new google.maps.InfoWindow({content:html});
+                   iw.open(map,marker);
+                   infoWindowVisible(true);
+               }
+        });
+        google.maps.event.addListener(iw, 'closeclick', function () {
+            infoWindowVisible(false);
+        });
+ }
+}
+              
+              
+}
 
-//callMapFunction(asset_id,asset_loc_lat,asset_loc_long,asset_name);
+        });
+        
+        
+    });
 
-});
 
-});
+function comcheck(asset_id){
+
+//var values = '<?php //print_r($_SESSION["question"]) ?>';
+//alert(values);
+//return false;
+//alert(asset_id);
+window.location.href = "charts.php?asset_id="+asset_id;
+}
+
  </script>       
 </body>
 </html>
@@ -302,3 +443,4 @@ load(asset_id,asset_loc_lat,asset_loc_long,asset_name) ;*/
 
 
 
+ 

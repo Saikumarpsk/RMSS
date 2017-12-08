@@ -113,57 +113,103 @@
 	
 	
 	
-     if(isset($_POST)  && $_POST['condition_type'] == 3)
-    {//print_r($_POST);die();
-       
-	//echo 'test';  die;
-	$cust_id=$_POST['cust_id'];
-	$countries =$_POST['fields'];
-	$_SESSION['question'] = $countries; 
-	//$_SESSION['final_custid'] = $_POST['cust_id'];
+//     if(isset($_POST)  && $_POST['condition_type'] == 3)
+//    {//print_r($_POST);die();
+//       
+//	//echo 'test';  die;
+//	$cust_id=$_POST['cust_id'];
+//	$countries =$_POST['fields'];
+//	$_SESSION['question'] = $countries; 
+//	//$_SESSION['final_custid'] = $_POST['cust_id'];
+//        
+////print_r(implode("," ,$countries));die();
+//$result_string = "'" . str_replace(",", "','", $countries) . "'";
+//
+////print_r($_SESSION['question']);die();
+// $sql =  "select * from  asset_id_list where field_id in($result_string) and customer_id = '$cust_id' ";
+//
+//$results = mysql_query($sql,$link);
+////print_r($result_string);
+////print_r($sql);
+////print_r($cust_id);
+////die();
+//
+////print_r($result_string);die();
+////$array=explode(',',$countries);
+////$unnecessary =array(1,'on','on');
+//
+////$result = array_diff($array,$unnecessary);
+//
+////$contries =implode(',', $result);
+//
+////$fields ="'" . implode ( "', '", $result ) . "'"; 
+//
+////        $sql =  "select * from  asset_id_list where field_id in($result_string) and customer_id = '$cust_id' ";
+////print_r($sql1);die();
+////$result = mysql_query($sql, $link);
+////      $lat = [];
+////        $long = []; 
+//         while($val1 = mysql_fetch_array($results))
+//        {
+//                
+////            $lat = $val1["asset_loc_lat"];
+////           $long = $val1["asset_loc_long"];
+//               
+//                echo "<input type='hidden' name=checkbox".$val1["asset_id"].'[]'." class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
+//			<ul class='sidebar-menu' data-widget='tree'>  
+//                         <li id='cls-active".$val1['asset_id']."' class=''> <a href='javascript:void(0);' onclick=comcheck('".$val1["asset_id"] ."');checkids('".$val1["asset_id"] ."');><i class='fa fa-circle text-green'></i><span>" .$val1["asset_name"] ."</span></a> </li>
+//                     </ul>";
+//
+//        }
+//
+//    }
+
+
+	
         
-//print_r(implode("," ,$countries));die();
-$result_string = "'" . str_replace(",", "','", $countries) . "'";
-
-//print_r($_SESSION['question']);die();
- $sql =  "select * from  asset_id_list where field_id in($result_string) and customer_id = '$cust_id' ";
-
-$results = mysql_query($sql,$link);
-//print_r($result_string);
-//print_r($sql);
-//print_r($cust_id);
-//die();
-
-//print_r($result_string);die();
-//$array=explode(',',$countries);
-//$unnecessary =array(1,'on','on');
-
-//$result = array_diff($array,$unnecessary);
-
-//$contries =implode(',', $result);
-
-//$fields ="'" . implode ( "', '", $result ) . "'"; 
-
-//        $sql =  "select * from  asset_id_list where field_id in($result_string) and customer_id = '$cust_id' ";
-//print_r($sql1);die();
-//$result = mysql_query($sql, $link);
-//      $lat = [];
-//        $long = []; 
-         while($val1 = mysql_fetch_array($results))
-        {
-                
-//            $lat = $val1["asset_loc_lat"];
-//           $long = $val1["asset_loc_long"];
+           
+            if(isset($_POST)  && $_POST['condition_type'] == 3 )
+            {
                
-                echo "<input type='hidden' name=checkbox".$val1["asset_id"].'[]'." class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
-			<ul class='sidebar-menu' data-widget='tree'>  
-                         <li id='cls-active".$val1['asset_id']."' class=''> <a href='javascript:void(0);' onclick=comcheck('".$val1["asset_id"] ."');checkids('".$val1["asset_id"] ."');><i class='fa fa-circle text-green'></i><span>" .$val1["asset_name"] ."</span></a> </li>
-                     </ul>";
+                
+               
+                $cust_id=$_POST['cust_id'];
+                $countries =$_POST['fields'];
 
-        }
+                $_SESSION["question"] = $countries; 
 
-    }
+                
+                
+                $result_string = "'" . str_replace(",", "','", $countries) . "'";
 
+                //print_r($result_string);die();
+                $sql =  "select * from  asset_id_list where field_id in($result_string) and customer_id = '$cust_id' ";
+                
+                $results = mysql_query($sql,$link);
+               //print_r($results);die('1111');
+            ?>
+            <ul class="sidebar-menu">
+            <?php
+                while($val1 = mysql_fetch_array($results))
+               {
+
+                    echo "<input type='hidden' name=checkbox1 class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
+                            <li class='treeview'> <a href='#'> <span>".$val1['asset_name']."</span> <i class='fa fa-circle-o text-green pull-right'></i> <span class='pull-right-container'> <i class='fa fa-anglde-left pull-right'></i> </span> </a>";
+                  
+           ?>
+              <ul class="treeview-menu ">
+                    <li><a href="javascript:void(0);" onclick="locateMap('<?php echo $val1["asset_id"]?>');">Location</a></li>
+                    <li><a href="javascript:void(0);" onclick="comcheck('<?php echo $val1["asset_id"]?>')">Panorama</a></li>
+                </ul>  
+            <?php
+                }
+            ?>
+                
+            </ul>
+            <?php
+            }
+//print_r($_POST);die();
+            ?>
 
     
 	
