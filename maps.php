@@ -20,13 +20,30 @@
          
           
            
-             <img src="dist/img/map.jpg" alt="" />
+<!--             <img src="dist/img/map.jpg" alt="" />-->
              
 
                     
                     
                
                  </div>
+          <div id="overlay">
+      <div class="overlay-icons">
+        <ul>
+          <li class="filter_one"> <img  src="dist/img/popup-filter-icon1.png"> </li>
+          <li> <img src="dist/img/popup-filter-icon2.png"> </li>
+          <li> <img src="dist/img/popup-filter-icon3.png"></li>
+          <li> <img src="dist/img/popup-filter-icon4.png"> </li>
+          <li> <a href="#" class="close_btn"> <img src="dist/img/close.png"></a> </li>
+        </ul>
+        <div class="pop-up">
+          <h3>Filter by Client</h3>
+          <input type="search" class="" placeholder="Type Client Name" >
+          <p></p>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
+    </div>
       </div>
     </section>
    
@@ -36,43 +53,7 @@
    
    
    
-   <div class="filter-sec">
-                      <div class="filter-button">
-                        <button type="button" data-toggle="modal" data-target="#product_view2"><i class="fa fa-filter" aria-hidden="true"></i></button>
-                      </div>
-                      <div class="modal fade product_view" id="product_view2">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="filter-icon">
-                                <button type="button" data-toggle="modal" data-target="#product_view3"> <img src="dist/img/popup-filter-icon1.png"></button>
-                                <div class="modal fade product_view" id="product_view3">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-body">
-                                        <div class="filtericon-search">
-                                          <div id="example1_filter" class="filter"> 
-											  <label>Filter by Client </label>                        
-                                              <input type="search" class="form-control input-sm" placeholder="Type Client Name" aria-controls="example1">
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon2.png"></div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon3.png"></div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon4.png"></div>
-                              <div class="filter-icon"><img src="dist/img/close.png" class="close" data-dismiss="modal" aria-label="Close"></div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-   
+   <?php include_once 'filterIcon.php'; ?>
             
             
   </div>
@@ -122,6 +103,13 @@
                     title: 'Snazzy!'
                 });
             }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".filter_one").click(function(){
+                    $(".pop-up").toggle();
+                });
+            });
         </script>
 </body>
 </html>
