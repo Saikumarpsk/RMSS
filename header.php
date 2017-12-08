@@ -25,7 +25,8 @@
           
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu"> <a class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <i class="fa fa-bell-o"></i> <span class="label label-warning">10</span>
-            
+
+      
             </a> </li>
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-clock-o"></i> <span class="label label-danger">9</span> </a>
