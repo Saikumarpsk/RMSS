@@ -1,28 +1,10 @@
-
-   <?php
-error_reporting(0);
-include './root_head.php';
-
-/*For total count */ 
-             $total =  "select count(*) as count from assets_alarams where user_id = 1 "; 
-             $resulttotal = mysql_query($total, $link);
-            /*For total count */
-                      
-            /*For $dischsrgepressure count */ 
-             $dischsrgepressure =  "select Alarm_Parameter,count(*) as count1 from assets_alarams where user_id = 1 group by Alarm_Parameter "; 
-             $resultdischsrgepressure = mysql_query($dischsrgepressure, $link);
-            /*For total count */ 
-                      
-            
-            ?>
-    <div class="alarm-notification-sec">
-              <div class="modal fade product_view" id="product_view1">
+<div class="alarm-notification-sec">
+              <div class="modal fade product_view" id="product_view9">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
                       <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                        <div class="row">
-                          <div class="col-lg-12">
+                       <div class="col-lg-12">
                         <?php          
                         $alaramss =  "select count(*) as count1 from assets_alarams where user_id = 1"; 
                         $resultalaramss = mysql_query($alaramss, $link);
@@ -30,8 +12,7 @@ include './root_head.php';
         
               <h3><span>A</span>larm : <?php echo $fetalaramss['count1'];?></h3>
                               </div>
-                          <div class="col-lg-12">
-                            <div class="row">
+                          <div class="row">
                               <div class="col-lg-4 marg-t-15">
                          <?php          
                         $notify_status =  "select count(*) as count1 from assets_alarams where user_id = 1 and notify_status='YES'"; 
@@ -90,8 +71,6 @@ include './root_head.php';
                                 <p>High High</p>
                               </div>
                             </div>
-                          </div>
-                        </div>
                         <hr>
                         <div class="row">
                           <div>
@@ -108,43 +87,44 @@ include './root_head.php';
                           </div>
                           <div class="col-sm-12">
                             <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
-                               <thead>
-                                    <tr role="row">
-                                      <th>Well Name</th>
-                                      <th>Date and Time</th>
-                                      <th>Status</th>
-                                      <th>Parameter</th>
-                                      <th>Value</th>
-                                      <th>Client Notified</th>
-                                      <th>Acknowledged By</th>
-                                      <th>SMS Sent</th>
-                                      <th>Email Sent</th>
-                                    </tr>
-                                  </thead>
+                              <thead>
+                                <tr role="row">
+                                  <th>Country</th>
+                                  <th>Field</th>
+                                  <th>Pad</th>
+                                  <th>Well</th>
+                                  <th>Alarm Time</th>
+                                  <th>UoM</th>
+                                  <th>Value</th> 
+                                  <th>Alarm Type</th>
+                                  <th>Acknowledge By</th>
+                                  <th>SMS Sent By</th>
+                                  <th>Email</th>
+                                </tr>
+                              </thead>
                               <tbody>
-                                      <?php 
-                        $alaram =  "select * from assets_alarams where user_id = 1 order by id desc limit 10"; 
+                                  <?php 
+                        $alaram =  "select * from assets_alarams A,asset_id_list B where user_id = 1 and A.asset_id = B.asset_short_name "; 
                         $resultalaram = mysql_query($alaram, $link);
         
 			while($alaramval = mysql_fetch_assoc($resultalaram))
 			{ ?>
-                                      
-                                      
-                                    <tr role="row" class="odd">
-                    <td><?php echo $alaramval['asset_id'];?></td>
-                    <td><?php echo $alaramval['time']?></td>
-                    <td><?php echo $alaramval['status']?></td>
-                    <td><?php echo $alaramval['Alarm_Parameter']?></td>
-                    <td><?php echo $alaramval['value']?></td>
-                    <td><?php echo $alaramval['notify_status']?></td>
-                    <td><?php echo $alaramval['Acknowledged_By']?></td>
-                    <td><?php echo $alaramval['Message']?></td>
-                    <td><?php echo $alaramval['Event_Detection']?></td>
-                                     
-                                    </tr>
-                                    
+                                
+                                <tr role="row" class="odd">
+                                 <td><?php echo $alaramval['country_id']?></td>
+                                  <td><?php echo $alaramval['field']?></td>
+                                  <td><?php echo $alaramval['pad']?></td>
+                                  <td><?php echo $alaramval['asset_name']?></td>
+                                  <td><?php echo $alaramval['time']?></td>
+                                  <td><?php echo $alaramval['UOM']?></td>
+                                  <td><?php echo $alaramval['value']?></td>
+                                  <td><?php echo $alaramval['Alarm_Type']?></td>
+                                  <td><?php echo $alaramval['Acknowledged_By']?></td>
+                                  <td><?php echo $alaramval['Message']?></td>
+                                
+                                </tr>
                         <?php }?>
-                                   </tbody>
+                              </tbody>
                             </table>
                           </div>
                         </div>
@@ -209,42 +189,7 @@ include './root_head.php';
               </div>
             </div>
             
-                  <div class="filter-sec">
-                      <div class="filter-button">
-                        <button type="button" data-toggle="modal" data-target="#product_view2"><i class="fa fa-filter" aria-hidden="true"></i></button>
-                      </div>
-                      <div class="modal fade product_view" id="product_view2">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="filter-icon">
-                                <button type="button" data-toggle="modal" data-target="#product_view3"> <img src="dist/img/popup-filter-icon1.png"></button>
-                                <div class="modal fade product_view" id="product_view3">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-body">
-                                        <div class="filtericon-search">
-                                          <div id="example1_filter" class="filter"> 
-											  <label>Filter by Client </label>                        
-                                              <input type="search" class="form-control input-sm" placeholder="Type Client Name" aria-controls="example1">
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon2.png"></div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon3.png"></div>
-                              <div class="filter-icon"><img src="dist/img/popup-filter-icon4.png"></div>
-                              <div class="filter-icon"><img src="dist/img/close.png" class="close" data-dismiss="modal" aria-label="Close"></div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  
                     
               <div class="marker-sec">
                       <div class="btn-ground text-center">
@@ -318,4 +263,5 @@ include './root_head.php';
                         </div>
                       </div>
                     </div>        
+            
             

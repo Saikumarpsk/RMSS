@@ -4,8 +4,8 @@
       <!-- Sidebar toggle button-->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Alarms</a></li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view8">Dashboard</a></li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view9">Alarms</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Events</a></li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <i class="fa fa-angle-down"> </i></a>
@@ -16,7 +16,7 @@
               <li><a href="#">Action4</a></li>
             </ul>
           </li>
-          <li><a href="#">Contract Mangement</a></li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view10">Contract Mangement</a></li>
         </ul>
       </div>
       <div class="navbar-custom-menu">
@@ -24,12 +24,14 @@
           <!-- Messages: style can be found in dropdown.less--> 
           
           <!-- Notifications: style can be found in dropdown.less -->
-<!--          <li class="dropdown notifications-menu"> <a class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <i class="fa fa-bell-o"></i> <span class="label label-warning">10</span>
+          <li class="dropdown notifications-menu"> <a class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <i class="fa fa-bell-o"></i> <span class="label label-warning">10</span>
 
-            </a> </li>-->
+            </a> </li>
           <!-- Tasks: style can be found in dropdown.less -->
+         
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-clock-o"></i> <span class="label label-danger">9</span> </a>
-            <ul class="dropdown-menu">
+            
+              <ul class="dropdown-menu">
               <li class="header">You have 9 tasks</li>
               <li> 
                 <!-- inner menu: contains the actual data -->

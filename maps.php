@@ -32,10 +32,10 @@
    
 <!--------------- all popups--------------->
    
-   
-   
-   
-   
+  <?php include_once 'dashboard.php'; ?>
+   <?php include_once 'alarams.php'; ?>
+   <?php include_once 'alaramsTab.php'; ?>
+   <?php include_once 'contactManagement.php'; ?>
    <div class="filter-sec">
                       <div class="filter-button">
                         <button type="button" data-toggle="modal" data-target="#product_view2"><i class="fa fa-filter" aria-hidden="true"></i></button>
