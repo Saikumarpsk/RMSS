@@ -248,12 +248,13 @@ include './root_head.php';
                     
               <div class="marker-sec">
                       <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"> <img src="dist/img/marker-icon.png"></button>
+                        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"> <img src="dist/img/marker-icon.png"></button>-->
                       </div>
                       <div class="modal fade product_view" id="product_view">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                               <div class="row">
                                 <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
                                 <div class="col-lg-6 wel-sec">

@@ -6,14 +6,13 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="javascript:void(0);" onclick="dashboasrd()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view8">Dashboard</a></li>
           <li><a href="javascript:void(0);" onclick="alaramstab()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view9">Alarms</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Events</a></li>
+          <li><a href="#">Events</a></li>      
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action1</a></li>
-              <li><a href="#">Action2</a></li>
-              <li><a href="#">Action3</a></li>
-              <li><a href="#">Action4</a></li>
+              <li><a href="#">Eqipment Management</a></li>
+              <li><a href="#">Field Service Management</a></li>
+              <li><a href="#">Application Engineering</a></li>
+              <li><a href="#">Quality Assurance Tracker</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0);" onclick="contactManagement()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view10">Contract Mangement</a></li>

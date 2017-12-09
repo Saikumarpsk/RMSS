@@ -52,7 +52,7 @@
            ?>
               <ul class="treeview-menu ">
                     <li><a href="javascript:void(0);" onclick="locateMap('<?php echo $val1["asset_id"]?>');">Location</a></li>
-                    <li><a href="javascript:void(0);" onclick="assetDetails('<?php echo $val1["asset_id"]?>')">Panorama</a></li>
+                    <li><a href="javascript:void(0);" onclick="assetDetails('<?php echo $val1["asset_id"]?>')">Well Details</a></li>
                 </ul>  
             <?php
                 }
@@ -105,24 +105,7 @@
             
             window.location.href = "charts.php?asset_id="+asset_id;
         }
-        function assetDetails(asset_id){
-            
-            //var fields = '<?php print_r($_SESSION["question"]) ?>';
-            
-//            $.ajax({
-//               type:'POST',
-//               data:{
-//                 asset_idlist:asset_id,
-//                 fields:fields,
-//               },
-//               url:'charts.php',
-//               success: function (response) {
-//                        
-//                    //alert(response);
-//                  $("#asset_res").html(response);
-//                }
-//               
-//            });
+        function comcheck(asset_id){
             
             window.location.href = "charts.php?asset_id="+asset_id;
         }

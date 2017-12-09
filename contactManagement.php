@@ -34,7 +34,7 @@
   </aside>
 	
 	<!-- Content Wrapper. Contains page content -->
-	  <div class="content-wrapper"> 
+	   <div class="content-wrapper"> 
                <?php include_once 'alarams.php'; ?>
               <div class="box allpage-tabledata">
 <div class="box">
@@ -42,16 +42,17 @@
     <div class="box-body">
       <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">
         <div class="row marg-t-15">
-          <div class="col-sm-6 text-left">
+            <div class="col-sm-6 text-left table-export ">
+                          <h3>Contract KPI</h3>
+          </div>
+          <div class="col-sm-6 text-right">
             <div class="input-group table-serch">
               <input type="text" name="q" class="form-control color" placeholder="Search...">
               <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
               </span> </div>
           </div>
-          <div class="col-sm-6 text-right table-export ">
-            <button type="button" class="btn btn-primary"><i class="fa fa-file-o"></i> Export Data</button>
-          </div>
+
         </div>
           <?php          
                         $contractkpi =  "select * from  Contractkpi"; 
@@ -63,15 +64,16 @@
             <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
                <thead>
                                 <tr role="row">
-                                  <th>vendor</th>
-                                  <th>production</th>
-                                  <th>Total_Down_Time</th>
-                                  <th>Deffered_Production</th>
-                                  <th>Late_Delivery</th>
-                                  <th>Failed_Pumps</th>
-                                  <th>Installtion</th>
-                                  <th>Pull</th>
-                                  <th>Vehicle_Accidents</th>
+                                  <th>Vendor</th>
+                                  <th>Production</th>
+                                  <th>Total Down Time</th>
+                                  <th>Deferred Production</th>
+                                  <th>Late Delivery</th>
+                                  <th>Failed Pumps</th>
+                                  <th>WO Installation</th>
+                                  <th>WO Pull</th>
+                                  <th>Vehicle Accidents</th>
+                                  <th>Score</th>
                                 </tr>
                               </thead>
               <tbody>
@@ -87,6 +89,7 @@
                                   <td><?php echo $fetcontractkpi['Installtion'];?></td>
                                   <td><?php echo $fetcontractkpi['Pull'];?></td>
                                   <td><?php echo $fetcontractkpi['Vehicle_Accidents'];?></td>
+                                  <td><?php echo $fetcontractkpi['Score'];?></td>
                                 </tr>
                         <?php } ?>
                 

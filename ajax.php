@@ -81,7 +81,7 @@
 		
     if(isset($_POST)  && $_POST['condition_type'] == 2)
     {
-        $cust_id=$_POST['cust_id'];
+        $cust_id=$_POST['cust_id']; 
         $countries =$_POST['countries'];
 
         $array=explode(',',$countries);
@@ -92,12 +92,12 @@
 
             //$contries =implode(',', $result);
 
-        $contries="'" . implode ( "','", $result ) . "'";
+        $contries="'" . implode ( "','", $result ) . "'"; 
 
 
 
         $sql =  "select * from  asset_id_list where country_id in($contries) and customer_id = '$cust_id' ";  
-        $result = mysql_query($sql, $link);
+        $result = mysql_query($sql, $link); 
         //print_r($result);die;
         while($val1 = mysql_fetch_array($result))
         {
@@ -171,7 +171,7 @@
             if(isset($_POST)  && $_POST['condition_type'] == 3 )
             {
                
-                
+                //echo 'test'; die;
                
                 $cust_id=$_POST['cust_id'];
                 $countries =$_POST['fields'];
@@ -193,7 +193,7 @@
                 while($val1 = mysql_fetch_array($results))
                {
 
-                    echo "<input type='hidden' name=checkbox1 class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
+                    echo "<input type='hidden' name=mapcords class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
                             <li class='treeview'> <a href='#'> <span>".$val1['asset_name']."</span> <i class='fa fa-circle-o text-green pull-right'></i> <span class='pull-right-container'> <i class='fa fa-anglde-left pull-right'></i> </span> </a>";
                   
            ?>

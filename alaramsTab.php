@@ -42,16 +42,17 @@
     <div class="box-body">
       <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">
         <div class="row marg-t-15">
-          <div class="col-sm-6 text-left">
+            <div class="col-sm-6 text-left table-export ">
+                          <h3>Current Alarms</h3>
+          </div>
+          <div class="col-sm-6 text-right">
             <div class="input-group table-serch">
               <input type="text" name="q" class="form-control color" placeholder="Search...">
               <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
               </span> </div>
           </div>
-          <div class="col-sm-6 text-right table-export ">
-            <button type="button" class="btn btn-primary"><i class="fa fa-file-o"></i> Export Data</button>
-          </div>
+
         </div>
         <div class="row marg-t-15">
           <div class="col-sm-12">
@@ -68,7 +69,7 @@
                                   <th>Alarm Type</th>
                                   <th>Acknowledge By</th>
                                   <th>SMS Sent By</th>
-                                  <th>Email</th>
+                                  <th>Email Sent By</th>
                                 </tr>
                               </thead>
               <tbody>
@@ -90,6 +91,7 @@
                                   <td><?php echo $alaramval['Alarm_Type']?></td>
                                   <td><?php echo $alaramval['Acknowledged_By']?></td>
                                   <td><?php echo $alaramval['Message']?></td>
+                                  <td><?php echo $alaramval['email_sent_by']?></td>
                                 
                                 </tr>
                         <?php }?>

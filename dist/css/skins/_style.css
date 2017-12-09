@@ -520,3 +520,201 @@
 .allpage-tabledata{
     margin-top: 55px !important;
 }
+
+
+/************GS Graphs*************************************************/
+.filtertitle{color: #1350be; font-size: 1.9rem;font-weight: normal; font-weight: 200}
+.filtertitle > strong{ border-bottom: 2px solid #1350be; font-weight: 200}
+.filtertitle > strong{ border-bottom: 2px solid #1350be; font-weight: 200}
+.chart_lables{ text-align: center; margin-top: 7px;}
+.chart_lables > label{ margin: 0 3px; font-weight: 200}
+.chart_lables > label > i{ margin: 0 5px;}
+
+
+.filterby > select { width:60%; border: solid 1px #acacac; border-radius: 40px;padding: 6px 15px;}
+.filterby > label{ margin: 0 3px; font-weight: 200}
+.filterby > select:focus, .filterby > select:visited, .filterby > select:active  { border: solid 1px #acacac;}
+
+.knob-pad{ padding:15px 0px; text-align: center; margin: auto}
+.knob-pad > label{color: #1350be; font-size:20px; font-weight: normal; font-weight: 400;}
+
+.celcius{ padding: 15px 0px; }
+.celcius ins{ font-size: 50px; text-align: center; color: darkorange; text-decoration: none;}
+.celcius span{display: block; margin-top: -14px; text-align: left; font-size: 20px; color: #838383;}
+.celcius .title{color: #1350be; padding: 15px 0px;   font-size: 20px;  text-align: center;   font-weight: 400;}
+	
+
+.box_timeline{
+    margin:0;
+    overflow: hidden;
+    padding: 10px 0 40px 60px
+}
+
+.box_timeline ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.5s linear;
+    top:0
+}
+
+.box_timeline ul:last-of-type{}
+
+.box_timeline ul:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px dashed #d2dfed;
+    position: absolute;
+    top:0;
+    left:30px
+}
+
+.box_timeline ul li{
+    margin: 20px 0px 60px 60px;
+    position: relative;
+    padding: 10px 20px;
+    background: rgba(242, 247, 252, 1);
+    color: #5b5b5b;
+    border-radius: 10px;
+    line-height: 20px; 
+    /* width: 100%; */
+}
+
+
+.box_timeline ul li > span{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px solid #d2dfed;
+    position: absolute;
+    top:0;
+    left:-30px
+}
+
+.box_timeline ul li > span:before,.box_timeline ul li > span:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#d2dfed;
+    border:2px solid #d2dfed;
+    position: absolute;
+    left:-5.5px
+}
+
+.box_timeline ul li > span:before{top:-10px}
+.box_timeline ul li > span:after{top:95%}
+
+.box_timeline .title{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.box_timeline .info:first-letter{text-transform: capitalize;line-height: 1.7}
+
+.box_timeline .name{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px
+}
+
+
+.box_timeline .time span{
+    position: absolute;
+    left: -100px;
+     color: #5b5b5b;
+    font-size:80%;
+    font-weight: bold;
+}
+.box_timeline .time span:first-child{top:-16px}
+.box_timeline .time span:last-child{top:94%}
+
+
+.arrow{
+    position: absolute;
+    top: 105%;
+    left: 22%;
+    cursor: pointer;
+  height:20px;
+  width:20px
+}
+
+.arrow:hover{
+    -webkit-animation: arrow 1s linear infinite;
+       -moz-animation: arrow 1s linear infinite;
+         -o-animation: arrow 1s linear infinite;
+            animation: arrow 1s linear infinite;
+}
+
+.box_timeline ul:last-of-type .arrow{
+    position: absolute;
+    top: 105%;
+    left: 22%;
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+.well-pump{ padding: 15px 0px 48px 0px}
+.well-pump > label{ font-weight: 400;}
+.thermometer-demo {
+border-top: 1px solid #c4c4c4;
+margin-bottom: 1em;
+padding-bottom: 0.25em;
+}pre {
+background: #f8f8f8;
+border: 1px solid #ddd;
+padding: 6px;
+word-wrap: break-word;
+}
+.thermometer-outer {
+background: #c4f0ff;
+/*border: 1px solid #c4c4c4;*/
+border-radius: 3px;
+}
+.thermometer-outer-h {
+height: 20px;
+width: 100%;
+}
+.thermometer-outer-v {
+height: 312px;
+width: 52px; 
+background: url(../../img/pump.png) no-repeat;
+	left: 33%;
+}
+.thermometer-inner {
+background: #3f83f7; opacity: 0.5;
+}
+.thermometer-inner-h {
+height: 5px;
+}
+.thermometer-inner-v {
+    width: 34px;
+    left: 13px;
+
+}
+.pump-meter{ margin-top:100px; left:30px;}
+.h-line-top {
+    border-bottom: solid 2px #8ba0bc;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 52px;
+    z-index: 999;
+
+}
+.h-line-bottom{ border-bottom: solid 2px red;}
+
+.indcate-ftimg {    position: absolute;    z-index: 9999;    bottom: 15px;    right: 40px;}
+.pumpvalues{   	position: absolute;    z-index: 9999;    bottom: 7px;    left: 8px;}
+.pumpvalues > ul{ margin: 0px; padding: 0px;}
+.pumpvalues > ul > li{ list-style: none; line-height: 70px;}
+
+/************GS Graphs***********************************************/

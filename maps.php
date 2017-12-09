@@ -372,18 +372,19 @@ $("#submit_company").click(function(){
 		var mapOptions = {
 			center: latlng,
 			zoom: 2,
-			mapTypeId: google.maps.MapTypeId.HYBRID
+			mapTypeId: google.maps.MapTypeId.HYBRID,
+                        styles: [{"featureType": "all","elementType": "labels.text.fill","stylers": [{"color": "#ffffff"}]},{"featureType": "all","elementType": "labels.text.stroke","stylers": [{"color": "#000000"},{"lightness": 13}]},{"featureType": "administrative","elementType": "geometry","stylers": [{"visibility": "off"}]},{"featureType": "administrative","elementType": "geometry.fill","stylers": [{"color": "#000000"},{"visibility": "off"}]},{"featureType": "administrative","elementType": "geometry.stroke","stylers": [{"color": "#144b53"},{"lightness": 14},{"weight": 1.4},{"visibility": "off"}]},{"featureType": "administrative","elementType": "labels","stylers": [{"visibility": "off"}]},{"featureType": "administrative.country","elementType": "geometry.stroke","stylers": [{"visibility": "off"}]},{"featureType": "administrative.country","elementType": "labels","stylers": [{"visibility": "off"}]},{"featureType": "administrative.province","elementType": "labels.text.stroke","stylers": [{"visibility": "on"}]},{"featureType": "landscape","elementType": "all","stylers": [{"color": "#08304b"}]},{"featureType": "landscape.natural.landcover","elementType": "labels","stylers": [{"visibility": "on"}]},{"featureType": "landscape.natural.landcover","elementType": "labels.text","stylers": [{"visibility": "off"}]},{"featureType": "landscape.natural.landcover","elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "landscape.natural.terrain","elementType": "labels.icon","stylers": [{"visibility": "on"}]},{"featureType": "poi","elementType": "geometry","stylers": [{"color": "#0c4152"},{"lightness": 5}]},{"featureType": "poi.park","elementType": "labels.text","stylers": [{"visibility": "on"}]},{"featureType": "road.highway","elementType": "geometry.fill","stylers": [{"color": "#000000"}]},{"featureType": "road.highway","elementType": "geometry.stroke","stylers": [{"color": "#0b434f"},{"lightness": 25}]},{"featureType": "road.arterial","elementType": "geometry.fill","stylers": [{"color": "#000000"}]},{"featureType": "road.arterial","elementType": "geometry.stroke","stylers": [{"color": "#0b3d51"},{"lightness": 16}]},{"featureType": "road.local","elementType": "geometry","stylers": [{"color": "#000000"}]},{"featureType": "road.local","elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "transit","elementType": "all","stylers": [{"color": "#146474"}]},{"featureType": "transit.station.airport","elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "water","elementType": "all","stylers": [{"color": "#021019"}]}]
 		};
 		map = new google.maps.Map(document.getElementById("map-canvas"),
 			mapOptions);
-		bounds = new google.maps.LatLngBounds();
+		//bounds = new google.maps.LatLngBounds();
 		$.each(markers_db[0], function(key, value) {
                     
 			makeMarker(value, key);
                         
 		});
 		//  Fit these bounds to the map
-		map.fitBounds(bounds);
+		//map.fitBounds(bounds);
 		var listener = google.maps.event.addListener(map, "idle", function() {
 			if (map.getZoom() > 16) {
 				map.setZoom(16);
@@ -414,19 +415,20 @@ $("#submit_company").click(function(){
 		var location = new google.maps.LatLng(parseFloat(item.Latitude), parseFloat(item.Longitude));
 //		item.AccountType = "FBO";
 //		if(item.AccountType == "FBO" && item.type == "fbo"){       
-alert(parseFloat(item.Latitude));
+//alert(parseFloat(item.Latitude));
                     var image = new google.maps.MarkerImage(
-				'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png',
-				new google.maps.Size(32,32),
-				new google.maps.Point(0,0),
-				new google.maps.Point(16,16)
+				'dist/img/marker-icon.png',
+//				new google.maps.Size(32,32),
+//				new google.maps.Point(0,0),
+//				new google.maps.Point(16,16)
 			);
-                bounds.extend(location);
+                //bounds.extend(location);
 		var marker = new google.maps.Marker({
 			map: map,
 			position: location,
 			zoom: 2,
-			icon: image
+			icon: image,
+                        
 		});
 		markers.push(marker);
 		
@@ -435,7 +437,7 @@ alert(parseFloat(item.Latitude));
 
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
-			height: 80
+			//height: 40
 		});
 
 		google.maps.event.addListener(marker, 'click', function() {
@@ -673,6 +675,61 @@ function comcheck(asset_id){
 window.location.href = "charts.php?asset_id="+asset_id;
 }
 */
+   
+   function comcheck(asset_id){
+            
+            window.location.href = "charts.php?asset_id="+asset_id;
+        }
+ 
+// setInterval(function () {
+//     
+//     var values = '<?php print_r($_SESSION["question"]) ?>';
+//     
+//     if(typeof(values) != 'undefined' && typeof('values') != ''){
+//         //alert(values);
+//         var cust_id = document.cookie;
+//	
+//	var valid_cust_id=cust_id.split(";");
+//	var final_cust_id=valid_cust_id[0];
+//	
+//	
+//		$.ajax({
+//			type:'POST',
+//			data:{
+//				cust_id: final_cust_id,
+//				condition_type : 3,
+//				fields: values			
+//			},
+//			url:'ajax.php',
+//			success:function(response){
+//				//$("#asset_res").html(response);
+//				 $("#asset_res").html(response);
+//                        var asset_loc_lat = [];
+//                        var asset_loc_long = [];
+//                        var asset_id = [];
+//                        var asset_name = [];
+//                        var markers_db = [];
+//                       var values = $('input[name="mapcords"]').map(function() {
+//                            asset_loc_lat.push($(this).attr('lat'));
+//                            asset_loc_long.push($(this).attr('long'));
+//                            asset_id.push($(this).val());
+//                            asset_name.push($(this).attr('asset_name'));
+//                        }).get();
+//                        //console.log(asset_loc_lat);debugger;
+//                        for(ass_id = 0;ass_id < asset_id.length;ass_id++){
+//                            markers_db.push([{"address":"hello","Latitude":asset_loc_lat[ass_id],"Longitude":asset_loc_long[ass_id]}]);
+//
+//                        }
+//                       
+//                        var bounds = null;
+//
+//                                        var def_latlng = new google.maps.LatLng(-29.86519774, 30.98538962);
+//                                        initializeMap(def_latlng,markers_db);
+//			}
+//                    });
+//    }  
+//  }, 10000);
+ 
  </script>       
 </body>
 </html>

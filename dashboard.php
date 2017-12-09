@@ -69,10 +69,10 @@
                                   <th>Field</th>
                                   <th>Pad</th>
                                   <th>Well</th>
-                                  <th>Install date</th>
+                                  <th>Install Date</th>
                                   <th>Run Life</th>
                                   <th>Production Rate</th>
-                                  <th>Oil Production rate</th>
+                                  <th>Average Amps</th>
                                 </tr>
               </thead>
               <tbody>
