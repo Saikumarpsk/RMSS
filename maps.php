@@ -60,6 +60,10 @@
     
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper"> 
+      <?php //include_once 'dashboard.php'; ?>
+   <?php include_once 'alarams.php'; ?>
+   <?php //include_once 'alaramsTab.php'; ?>
+   <?php //include_once 'contactManagement.php'; ?>
 	  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> <img src="dist/img/arrow-menu.png" alt="" /> </span> </a>
     <style>
                 #map-canvas {
@@ -92,10 +96,39 @@
             </div>
            <div class="col-lg-12">
                     <div class="allarm-events">
-                      <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
-                      Allarm Events Screoll Here.....
+                                  <?php
+                
+                 $scrollingalaram =  "select distinct(asset_id),status,Alarm_type from assets_alarams where user_id = 1  order by id desc";
+                      $resultscrollingalaram = mysql_query($scrollingalaram, $link);
+               
+                      ?>
+                                <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
+                     <?php
+                          while($scrolingalaramval = mysql_fetch_array($resultscrollingalaram))
+                            {
+                             //echo "<pre>";print_r($scrolingalaramval);
+                           
+                          ?>
+                        
+<!--                          Allarm Events Screoll Here.....-->
+
+<?php  if ( $scrolingalaramval['Alarm_type']=='Low Low'){ ?>
+              <i class="fa fa-circle text-red" ></i>                  
+<?php   } elseif($scrolingalaramval['Alarm_type']=='Low'){ ?>
+              <i class="fa fa-circle text-orange" ></i>      
+  <?php }elseif(($scrolingalaramval['Alarm_type']=='High')){ ?>
+<i class="fa fa-circle text-aqua" ></i>
+<?php }elseif($scrolingalaramval['Alarm_type']=='High High'){ ?>
+<i class="fa fa-circle text-green" ></i>
+                      
+                           <?php }?>
+
+                        <?php echo $scrolingalaramval['asset_id'] ?><?php  echo $scrolingalaramval['Alarm_type'] ?>
+                       
+             <?php }?>           
+                       
                       </marquee>
-                    </div>
+                              </div>
                   </div>
              
              
@@ -159,10 +192,7 @@
 <!--------------- all popups--------------->
    
 
-  <?php include_once 'dashboard.php'; ?>
-   <?php include_once 'alarams.php'; ?>
-   <?php include_once 'alaramsTab.php'; ?>
-   <?php include_once 'contactManagement.php'; ?>
+  
    <div class="filter-sec">
                       <div class="filter-button">
                         <button type="button" data-toggle="modal" data-target="#product_view2"><i class="fa fa-filter" aria-hidden="true"></i></button>

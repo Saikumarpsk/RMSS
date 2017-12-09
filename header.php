@@ -1,11 +1,11 @@
 <header class="main-header">
     <nav class="navbar navbar-static-top">
-      <div class="_logo"><img src="dist/img/Kellton-logo.png" alt="" /> Well <strong>Vision</strong></div>
+      <div class="_logo"><img src="dist/img/Kellton-logo.png" alt="" /></div>
       <!-- Sidebar toggle button-->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view8">Dashboard</a></li>
-          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view9">Alarms</a></li>
+            <li class="active"><a href="javascript:void(0);" onclick="dashboasrd()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view8">Dashboard</a></li>
+          <li><a href="javascript:void(0);" onclick="alaramstab()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view9">Alarms</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Events</a></li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <i class="fa fa-angle-down"> </i></a>
@@ -16,7 +16,7 @@
               <li><a href="#">Action4</a></li>
             </ul>
           </li>
-          <li><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view10">Contract Mangement</a></li>
+          <li><a href="javascript:void(0);" onclick="contactManagement()" class="dropdown-toggle" data-toggle="modal" data-target="#product_view10">Contract Mangement</a></li>
         </ul>
       </div>
       <div class="navbar-custom-menu">
@@ -85,4 +85,13 @@
    function logout(){
 	window.location.href = "logout.php";
     }
+    function dashboasrd(){
+     window.location.href = "dashboard.php";
+        }
+        function alaramstab(){
+     window.location.href = "alaramsTab.php";
+        }
+        function contactManagement(){
+     window.location.href = "contactManagement.php";
+        }
 </script>

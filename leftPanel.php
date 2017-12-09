@@ -105,4 +105,26 @@
             
             window.location.href = "charts.php?asset_id="+asset_id;
         }
+        function assetDetails(asset_id){
+            
+            //var fields = '<?php print_r($_SESSION["question"]) ?>';
+            
+//            $.ajax({
+//               type:'POST',
+//               data:{
+//                 asset_idlist:asset_id,
+//                 fields:fields,
+//               },
+//               url:'charts.php',
+//               success: function (response) {
+//                        
+//                    //alert(response);
+//                  $("#asset_res").html(response);
+//                }
+//               
+//            });
+            
+            window.location.href = "charts.php?asset_id="+asset_id;
+        }
+ 
   </script>
