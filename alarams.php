@@ -199,10 +199,10 @@
                     <div class="col-lg-3 text-blue marg-t-15"><i class="fa fa-circle"></i> WO Pull=19</div>
                   </div>
                 </div>
-                <div class="col-lg-12 marg-t-15">
+<!--                <div class="col-lg-12 marg-t-15">
                   <button type="button" class="btn btn-primary">Export Data</button>
                   <button type="button" class="btn btn-primary">Email Data</button>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>

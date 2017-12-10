@@ -10,8 +10,8 @@
 	
 	<!-- Content Wrapper. Contains page content -->
 	   <div class="content-wrapper"> 
-               <?php include_once 'alarams.php'; ?>
-              <div class="box allpage-tabledata">
+               <section class="content">
+                  
 <div class="box">
 
     <div class="box-body">
@@ -37,7 +37,7 @@
         
         <!-- Content Wrapper. Contains page content -->
 	   
-               <?php include_once 'alarams.php'; ?>
+              
                
              <div class="box no-border">
       <div class="box-header"></div>
@@ -150,9 +150,11 @@
         </div>
       </div>
     </div>  
-             
-      </div>
+      
     </div>
+               </section>
+               <?php include_once 'alarams.php'; ?>
+              
     <!-- /.box-body --> 
   </div>
               </div>
