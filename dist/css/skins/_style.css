@@ -195,7 +195,7 @@
 	width: 530px;
 	margin: 145px 117px 30px 495px;
 }
-.marker-sec .modal-dialog:afteer {
+.marker-sec .modal-dialog:after {
 	content: "";
 	border-right: 10px solid transparent;
 	border-top: 15px solid #030f27;
@@ -488,7 +488,7 @@
 }
 /*--------------09-12-2017----------------*/
 .dashboardt-table {
-	font-size: 12px;
+	font-size: 12px; text-align: left;
 }
 .table-serch .form-control {
 	border: 1px solid #5099c3;
@@ -1034,3 +1034,8 @@ img.alaramclose{  height: 26px; width: 26px;
 .marquee-scroller{ }
 .marquee-scroller>ul{ margin: 0px; padding: 0px;  }
 .marquee-scroller>ul>li { display: inline-block; margin: 0px 15px;  }
+.select-txt{  background: #FFF;
+    border: solid 1px #FFF;
+    border-radius: 2px;
+    padding: 2px;
+    color: #000;};

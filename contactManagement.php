@@ -39,7 +39,7 @@
         <thead>
           <tr>
             <th width="40%" > <div">
-                    <select >
+                    <select class="select-txt">
                          <option>Year</option>
                         <option>2014</option>
                         <option>2015</option>
@@ -47,8 +47,8 @@
                         <option>2017</option>
                        
                     </select>
-                <span>to</span>
-               <select >
+                <span>-</span>
+                <select class="select-txt">
                          <option>Month</option>
                         <option>Jan</option>
                         <option>Feb</option>
