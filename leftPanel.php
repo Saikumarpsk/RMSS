@@ -96,7 +96,7 @@
             <li><a href="#">Remove</a></li>
           </ul>
         </li>
-      </ul>ddd
+      </ul>
 		<div class="bottom-icons">
           <ul>
 			<li class="active"> <i class="fa fa-star-o"></i></li>

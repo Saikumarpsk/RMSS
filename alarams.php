@@ -14,26 +14,26 @@
                 <div class="col-lg-12">
                   <div class="row">
                     <div class="col-lg-4 marg-t-15">
-                      <p>Alarms Total:90</p>
+                      <p>Alarms Total:60</p>
                       <p>Not Acknowledged:20</p>
                     </div>
                     <div class="col-lg-8">
                       <div class="alarm-rounded">
                         <ul>
                           <li class="text-green">
-                            <div> 15 </div>
+                            <div> 10 </div>
                             <p>Very Low</p>
                           </li>
                           <li class="text-orange">
-                            <div>15</div>
+                            <div>20</div>
                             <p>Very High</p>
                           </li>
                           <li class="text-aqua">
-                            <div>15</div>
+                            <div>5</div>
                             <p>Low</p>
                           </li>
                           <li class="text-purple">
-                            <div>15</div>
+                            <div>25</div>
                             <p>High</p>
                           </li>
                         </ul>
@@ -199,10 +199,10 @@
                     <div class="col-lg-3 text-blue marg-t-15"><i class="fa fa-circle"></i> WO Pull=19</div>
                   </div>
                 </div>
-                <div class="col-lg-12 marg-t-15">
+<!--                <div class="col-lg-12 marg-t-15">
                   <button type="button" class="btn btn-primary">Export Data</button>
                   <button type="button" class="btn btn-primary">Email Data</button>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>

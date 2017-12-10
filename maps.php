@@ -78,7 +78,7 @@
                                       <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 5 : Low    
                                    <img src="dist/img/img-icon-5.png" width="20" height="20"  alt="" />Well 6 : Low
                                   <img src="dist/img/img-icon-4.png" width="20" height="20"  alt=""  />Well 7 : High    
-                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 8 : <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High
+                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 8 : Low <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High
                                     
                                     
                      <?php
