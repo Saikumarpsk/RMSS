@@ -58,144 +58,127 @@
                 <div class="col-sm-12">
                   <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                     <thead>
-                      <tr role="row">
-                        <th>Action</th>
-                        <th>Client</th>
-                        <th>Country</th>
-                        <th>Filed</th>
-                        <th>Pad</th>
-                        <th>Well</th>
-                        <th>Alarm Time</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
+                                    <tr role="row">
+                                      <th>Well Name</th>
+                                      <th>Date and Time</th>
+                                      <th>Status</th>
+                                      <th>Parameter</th>
+                                      <th>Value</th>
+                                      <th>Client Notified</th>
+                                      <th>Acknowledged By</th>
+                                      <th>SMS Sent</th>
+                                      <th>Email Sent</th>
+                                    </tr>
+                                  </thead>
                     <tbody>
                       <tr role="row" class="odd">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-red"></i> WO Opt</td>
-                      </tr>
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
                       <tr role="row" class="odd">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-red"></i> WO Opt</td>
-                      </tr>
-                      <tr role="row" class="even">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-yellow"></i> WO Opt</td>
-                      </tr>
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
                       <tr role="row" class="odd">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-yellow"></i> WO Opt</td>
-                      </tr>
-                      <tr role="row" class="even">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-orange"></i> WO Opt</td>
-                      </tr>
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
                       <tr role="row" class="odd">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-green"></i> WO Opt</td>
-                      </tr>
-                      <tr role="row" class="even">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-brown"></i> WO Opt</td>
-                      </tr>
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
                       <tr role="row" class="odd">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-blue"></i> WO Opt</td>
-                      </tr>
-                      <tr role="row" class="even">
-                        <td><div class="checkbox">
-                            <label>
-                              <input type="checkbox">
-                            </label>
-                          </div></td>
-                        <td >Lorem</td>
-                        <td>US</td>
-                        <td>14</td>
-                        <td>18</td>
-                        <td>D-376</td>
-                        <td>3:00PM</td>
-                        <td><i class="fa fa-circle text-red"></i> WO Opt</td>
-                      </tr>
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
+                      <tr role="row" class="odd">
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
+                      <tr role="row" class="odd">
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
+                      <tr role="row" class="odd">
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
+                      <tr role="row" class="odd">
+                    <td>A102</td>
+                    <td>2017-Dec-09 17:53:48</td>
+                    <td>WO Pull</td>
+                    <td>Discharge Pressure</td>
+                    <td>22531</td>
+                    <td>NO</td>
+                    <td>James</td>
+                    <td>RICO</td>
+                    <td>YES</td>
+                                     
+                                    </tr>
                     </tbody>
                   </table>
                 </div>

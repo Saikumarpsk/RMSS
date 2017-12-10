@@ -34,16 +34,32 @@
    <?php //include_once 'contactManagement.php'; ?>
 	  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> <img src="dist/img/arrow-menu.png" alt="" /> </span> </a>
     
+          
+          
+          
    
     <!-- Main content -->
     <section class="content">
+        <div class="row">
+   		<div class="col-md-12">
+   			<div class="map-location">
+   			 <img class="img-responsive" src="dist/img/map.jpg"/>
+   			<div class="map_location1"> <img src="dist/img/img-icon-1.png" width="80" height="80"  alt="" data-toggle="modal" data-target="#product_vieworange" /></div>
+  			  <div class="map_location2"> <img src="dist/img/img-icon-2.png" width="80" height="80" alt="" data-toggle="modal" data-target="#product_viewred" /></div>
+<!--  			  <div class="map_location3"> <img src="dist/img/img-icon-3.png" width="80" height="80" alt="" /></div>-->
+  			  <div class="map_location4"> <img src="dist/img/img-icon-4.png" width="80" height="80" data-toggle="modal" data-target="#product_viewgreen" alt=""/></div>
+<!--  			  <div class="map_location5"> <img src="dist/img/img-icon-5.png" width="80" height="80" alt=""/></div>-->
+  			  <div class="map_location6"> <img src="dist/img/img-icon-6.png" width="80" height="80" data-toggle="modal" data-target="#product_vieworange4" alt=""/></div>
+		  </div>
+   		</div>
+   </div>
+        
       <div class="row">
         <div class="col-md-12">
         
          
-            <div id="map" class="map-sec">
-               <img src="dist/img/map.jpg" alt="" />
-            </div>
+            
+            
            <div class="">
                     <div class="allarm-events">
                                   <?php
@@ -53,6 +69,18 @@
                
                       ?>
                                 <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
+                                    
+                                    <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 1 : Low Low    
+                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High 
+                                    
+                                   <img src="dist/img/img-icon-6.png" width="20" height="20"  alt="" />  Well 3 : High 
+                                     <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 4 : Low    
+                                      <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 5 : Low    
+                                   <img src="dist/img/img-icon-5.png" width="20" height="20"  alt="" />Well 6 : Low
+                                  <img src="dist/img/img-icon-4.png" width="20" height="20"  alt=""  />Well 7 : High    
+                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 8 : <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High
+                                    
+                                    
                      <?php
                           while($scrolingalaramval = mysql_fetch_array($resultscrollingalaram))
                             {
@@ -63,17 +91,17 @@
 <!--                          Allarm Events Screoll Here.....-->
 
 <?php  if ( $scrolingalaramval['Alarm_type']=='Low Low'){ ?>
-              <i class="fa fa-circle text-red" ></i>                  
+                          
 <?php   } elseif($scrolingalaramval['Alarm_type']=='Low'){ ?>
-              <i class="fa fa-circle text-orange" ></i>      
+            
   <?php }elseif(($scrolingalaramval['Alarm_type']=='High')){ ?>
-<i class="fa fa-circle text-aqua" ></i>
+
 <?php }elseif($scrolingalaramval['Alarm_type']=='High High'){ ?>
-<i class="fa fa-circle text-green" ></i>
+ 
                       
                            <?php }?>
 
-                        <?php echo $scrolingalaramval['asset_id'] ?><?php  echo $scrolingalaramval['Alarm_type'] ?>
+                        <?php //echo $scrolingalaramval['asset_id'] ?><?php // echo $scrolingalaramval['Alarm_type'] ?>
                        
              <?php }?>           
                        
@@ -82,101 +110,19 @@
                   </div>
              
              
-
-                    
-                    
-               
-                 </div>
-<!--          <div id="overlay">
-      <div class="overlay-icons">
-        <ul>
-          <li class="filter_one"> <img  src="dist/img/popup-filter-icon1.png"> </li>
-          <li> <img src="dist/img/popup-filter-icon2.png"> </li>
-          <li> <img src="dist/img/popup-filter-icon3.png"></li>
-          <li> <img src="dist/img/popup-filter-icon4.png"> </li>
-          <li> <a href="#" class="close_btn"> <img src="dist/img/close.png"></a> </li>
-        </ul>
-          
-        <div class="pop-up" >
-          <h3>Filter by Client</h3>
-          
-          <?php
-//		while($val1 = mysql_fetch_array($cus_result))
-//		{
-		    ?>
-		  <div>
-                    <input type="checkbox" name="checkbox" id="checkbox1"  value="<?=$val1["customer_id"]?>" >
-                    <label for="checkbox1"><?=isset($val1["cust_name_parent"])?$val1["cust_name_parent"]:'None'?></label>
-				  
-                </div>
-	      <?php //} ?>
-          <div class="arrow-down"></div>
-        </div>
-          
-        <div class="pop-up" id ="val_2">
-            <h3>second popup</h3>
-            <div id="company_res"></div>
-            <input type="button" id="submit_company"  value="submit">
-            <div class="arrow-down"></div>
-        </div>
-          
-        <div class="pop-up" id ="val_3"     >
-          <h3>Third popup</h3>
-          <div id="fields_res"></div>
-          <input type="button" id="submit_field"  value="submit">
-          <div class="arrow-down"></div>
-        </div>-->
-          
-<!--          <div class="pop-up" id ="val_4"     >
-          <h3>Forth popup</h3>
-          <div id="assets_res"></div>
-          <a href="#" data-toggle="modal" data-dismiss="modal"> <input type="button" id="submit_field"  value="submit"></a>
-          <div class="arrow-down"></div>
-        </div>-->
-          
-      </div>
-    </div>
-      </div>
-    </section>
-   
-<!--------------- all popups--------------->
-   
-
-  
-  <div class="filter-sec">
-          <div class="filter-button"> <a href="#overlay" id="open-overlay"><img src="dist/img/filter-icon.png"></a> </div>
-        </div>
-        <div id="overlay">
-          <div class="overlay-icons">
-            <ul>
-              <li class="filter_one"> <img  src="dist/img/popup-filter-icon1.png"> </li>
-              <li> <img src="dist/img/popup-filter-icon2.png"> </li>
-              <li> <img src="dist/img/popup-filter-icon3.png"></li>
-              <li> <img src="dist/img/popup-filter-icon4.png"> </li>
-              <li> <a href="#" class="close_btn"> <img src="dist/img/filter-close.png"></a> </li>
-            </ul>
-            <div class="pop-up">
-              <h3>Filter by Client</h3>
-              <input type="search" class="" placeholder="Type Client Name" >
-              <p></p>
-              <div class="arrow-down"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-   
+<!-- Map red pop up well 2 images start-->
         <div class="marker-sec">
-	      <div class="btn-ground text-center">
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"> <img src="dist/img/marker-icon.png"></button>
-	      </div>
-	      <div class="modal fade product_view" id="product_view">
+<!--	      <div class="btn-ground text-center">
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_viewred"> <img src="dist/img/marker-icon-2.png"></button>
+	      </div>-->
+	      <div class="modal fade product_view" id="product_viewred">
 		<div class="modal-dialog">
 		  <div class="modal-content">
 		    <div class="modal-header">
 		      <div class="row">
 		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
 		        <div class="col-lg-6 wel-sec">
-		          <h3><span>W</span>ell No:2 <i class="fa fa-wifi"></i></h3>
+		          <h3><span>W</span>ell No:2 <!--i class="fa fa-wifi"--></i></h3>
 		          <p><span>Status: <img src="dist/img/status-img.png"> Stopped</span> <span> | Alarm: 3:00 PM</span></p>
 		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
 		        </div>
@@ -238,7 +184,274 @@
 	      </div>
 	    </div>    
    
+    <!-- Map red pop up well2 images start-->
+                    
+                    
+               
+        </div>
+
+      </div>
+    </div>
+      </div>
+    </section>
    
+<!--------------- all popups--------------->
+   
+
+  
+  <div class="filter-sec">
+          <div class="filter-button"> <a href="#overlay" id="open-overlay"><img src="dist/img/filter-icon.png"></a> </div>
+        </div>
+        <div id="overlay">
+          <div class="overlay-icons">
+            <ul>
+              <li class="filter_one"> <img  src="dist/img/popup-filter-icon1.png"> </li>
+              <li> <img src="dist/img/popup-filter-icon2.png"> </li>
+              <li> <img src="dist/img/popup-filter-icon3.png"></li>
+              <li> <img src="dist/img/popup-filter-icon4.png"> </li>
+              <li> <a href="#" class="close_btn"> <img src="dist/img/filter-close.png"></a> </li>
+            </ul>
+            <div class="pop-up">
+              <h3>Filter by Client</h3>
+              <input type="search" class="" placeholder="Type Client Name" >
+              <p></p>
+              <div class="arrow-down"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      
+   <!--    Map Green pop up  Well 1 images start -->
+        <div class="marker-sec">
+	      <div class="btn-ground text-center">
+<!--		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_viewgreen"> <img src="dist/img/marker-icon-4.png"></button>-->
+	      </div>
+	      <div class="modal fade product_view" id="product_viewgreen">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <div class="row">
+		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
+		        <div class="col-lg-6 wel-sec">
+		          <h3><span>W</span>ell No:1 <i class="fa fa-wifi"></i></h3>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 3:00 PM</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="modal-body">
+		      <div class="row">
+		        <div class="col-lg-6">
+		          <p>Runlife; Total downtime :</p>
+		          <p>Last event; downtime : </p>
+		          <p>Type of pump icon :</p>
+		          <p>Monthy Production Rate:</p>
+		          <p>Yearly Production Rate:</p>
+		          <p>Flow Rate:</p>
+		        </div>
+		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
+		          <p>3</p>
+		          <p>2017-12-06</p>
+		          <p>lorem Ipsum</p>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>80%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>70%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>70%</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="btn-ground">
+		        <button type="button" class="btn btn-primary">Dashboard</button>
+		        <button type="button" class="btn btn-primary">Well Details</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>    
+   
+    <!-- Map Green pop up  Well 1 images ends-->
+   
+    
+    
+     <!--    Map Orange pop up  Well 1 images start -->
+        <div class="marker-sec">
+	      <div class="btn-ground text-center">
+<!--		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_viewgreen"> <img src="dist/img/marker-icon-4.png"></button>-->
+	      </div>
+	      <div class="modal fade product_view" id="product_vieworange">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <div class="row">
+		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
+		        <div class="col-lg-6 wel-sec">
+		          <h3><span>W</span>ell No:3 <i class="fa fa-wifi"></i></h3>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 2:30 PM</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="modal-body">
+		      <div class="row">
+		        <div class="col-lg-6">
+		          <p>Runlife; Total downtime :</p>
+		          <p>Last event; downtime : </p>
+		          <p>Type of pump icon :</p>
+		          <p>Monthy Production Rate:</p>
+		          <p>Yearly Production Rate:</p>
+		          <p>Flow Rate:</p>
+		        </div>
+		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
+		          <p>3</p>
+		          <p>2017-12-06</p>
+		          <p>lorem Ipsum</p>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>79%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>69%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>65%</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="btn-ground">
+		        <button type="button" class="btn btn-primary">Dashboard</button>
+		        <button type="button" class="btn btn-primary">Well Details</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>    
+   
+    <!-- Map Orange pop up  Well 1 images ends-->
+    
+    
+    <!--    Map Orange pop up  Well 1 images start -->
+        <div class="marker-sec">
+	      <div class="btn-ground text-center">
+<!--		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_viewgreen"> <img src="dist/img/marker-icon-4.png"></button>-->
+	      </div>
+	      <div class="modal fade product_view" id="product_vieworange4">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <div class="row">
+		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
+		        <div class="col-lg-6 wel-sec">
+		          <h3><span>W</span>ell No:8 <i class="fa fa-wifi"></i></h3>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 2:00 PM</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="modal-body">
+		      <div class="row">
+		        <div class="col-lg-6">
+		          <p>Runlife; Total downtime :</p>
+		          <p>Last event; downtime : </p>
+		          <p>Type of pump icon :</p>
+		          <p>Monthy Production Rate:</p>
+		          <p>Yearly Production Rate:</p>
+		          <p>Flow Rate:</p>
+		        </div>
+		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
+		          <p>3</p>
+		          <p>2017-12-06</p>
+		          <p>lorem Ipsum</p>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>50%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>50%</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-lg-9">
+		              <div class="progress">
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		              </div>
+		            </div>
+		            <div class="col-lg-2 progress-text">
+		              <p>60%</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="btn-ground">
+		        <button type="button" class="btn btn-primary">Dashboard</button>
+		        <button type="button" class="btn btn-primary">Well Details</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>    
+   
+    <!-- Map Orange pop up  Well 1 images ends-->
    
    
    
@@ -353,6 +566,10 @@ $("#submit_company").click(function(){
 	})
 	
 });
+
+function popup1(){
+    alert();
+}
 
 </script>
 

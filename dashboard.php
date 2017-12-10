@@ -40,28 +40,36 @@
             <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
               <thead>
                 <tr role="row">
+                                   <th>Client</th>
                                   <th>Country</th>
                                   <th>Field</th>
                                   <th>Pad</th>
                                   <th>Well</th>
                                   <th>Install Date</th>
                                   <th>Run Life</th>
-                                  <th>Production Rate</th>
-                                  <th>Average Amps</th>
+                                  <th>Total Production</th>
+                                  <th>Oil Production</th>
+                                  <th>Water Cut</th>
                                 </tr>
               </thead>
               <tbody>
                <?php while( $fetassetslist=mysql_fetch_array($runassetslist))
-			{ ?>
-                                  <tr role="row" class="odd">                                  
+			{ 
+                            $var = strtotime($fetassetslist['date']);
+                            $dateformat =  date("Y-M-d H:i:s" , $var); 
+                            
+                            ?>
+                                  <tr role="row" class="odd">   
+                                   <td >Rico</td>  
                                   <td ><?php echo $fetassetslist['country_id'];?></td>
                                   <td><?php echo $fetassetslist['field'];?></td>
                                   <td><?php echo $fetassetslist['pad'];?></td>
                                   <td><?php echo $fetassetslist['asset_name'];?></td>
-                                  <td><?php echo $fetassetslist['date'];?></td>
+                                  <td><?php echo $dateformat;?></td>
                                   <td><?php echo $fetassetslist['runlife'];?></td>
-                                  <td><?php echo $fetassetslist['production_rate'];?></td>
-                                  <td><?php echo $fetassetslist['oil_production_rate'];?></td>
+                                   <td>2000</td>
+                                   <td>1800</td>
+                                   <td>89 %</td>
                                 </tr>
                         <?php } ?> 
                 

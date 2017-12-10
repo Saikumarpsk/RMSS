@@ -14,7 +14,7 @@
               <div class="box allpage-tabledata">
 <div class="box">
 
-    <div class="box-body">
+      <div class="box-body">
       <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">
         <div class="row marg-t-15">
             <div class="col-sm-6 text-left table-export ">
@@ -34,6 +34,7 @@
             <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
                <thead>
                                 <tr role="row">
+                                  <th>Client</th>
                                   <th>Country</th>
                                   <th>Field</th>
                                   <th>Pad</th>
@@ -53,14 +54,20 @@
                         $resultalaram = mysql_query($alaram, $link);
         
 			while($alaramval = mysql_fetch_assoc($resultalaram))
-			{ ?>
-                                
-                                <tr role="row" class="odd">
-                                 <td><?php echo $alaramval['country_id']?></td>
+                                 
+			{ 
+                            $var = strtotime($alaramval['time']);
+                            $dateformat =  date("Y-M-d H:i:s" , $var); 
+                            
+                            ?>
+                  
+                                  <tr role="row" class="odd">
+                                  <td>Rico</td>
+                                  <td><?php echo $alaramval['country_id']?></td>
                                   <td><?php echo $alaramval['field']?></td>
                                   <td><?php echo $alaramval['pad']?></td>
                                   <td><?php echo $alaramval['asset_name']?></td>
-                                  <td><?php echo $alaramval['time']?></td>
+                                  <td><?php echo $dateformat; ?></td>
                                   <td><?php echo $alaramval['UOM']?></td>
                                   <td><?php echo $alaramval['value']?></td>
                                   <td><?php echo $alaramval['Alarm_Type']?></td>
