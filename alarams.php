@@ -1,7 +1,7 @@
 
    <?php
 error_reporting(0);
-include './root_head.php';
+
 
 /*For total count */ 
              $total =  "select count(*) as count from assets_alarams where user_id = 1 "; 
