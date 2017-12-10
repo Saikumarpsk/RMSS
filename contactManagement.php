@@ -38,8 +38,9 @@
       <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
         <thead>
           <tr>
+
             <th width="40%" > <div">
-                    <select class="select-txt">
+                    <select class="select-txt">          
                          <option>Year</option>
                         <option>2014</option>
                         <option>2015</option>
@@ -71,45 +72,45 @@
           </th>
         
         
-          <th width="20%"> Vender 1</th>
-          <th width="20%"> Vender 2</th>
-          <th width="20%"> Vender 3</th>
+          <th width="28%"> Vender 1</th>
+          <th width="28%"> Vender 2</th>
+          <th width="32%"> Vender 3</th>
         </tr>
           </thead>
         
         <tbody>
           <tr role="row">
-            <td ><strong>Production</td>
+              <td ><strong>Production&nbsp; (%)</td>
             <td>20</td>
             <td>30</td>
             <td>40</td>
           </tr>
           <tr role="row">
-            <td><strong>Total Down Time</td>
+            <td><strong>Total Down Time&nbsp; (Days)</td>
             <td>10</td>
             <td>10</td>
             <td>5</td>
           </tr>
           <tr role="row">
-            <td><strong>Deffered Production</td>
+            <td><strong>Deffered Production&nbsp; (BBL)</td>
             <td>3000</td>
             <td>3000</td>
             <td>5000</td>
           </tr>
           <tr role="row">
-            <td><strong>Late Delivery</td>
+            <td><strong>Late Delivery&nbsp; (Hrs)</td>
             <td>15</td>
             <td>15</td>
             <td>5</td>
           </tr>
           <tr role="row">
-            <td><strong>Failed Pumps</td>
+            <td><strong>Failed Pumps&nbsp;(%)</td>
             <td>10</td>
             <td>20</td>
             <td>30</td>
           </tr>
           <tr role="row">
-            <td><strong>WO Installtion</td>
+            <td><strong>WO Installation</td>
             <td>50</td>
             <td>50</td>
             <td>20</td>
@@ -137,6 +138,12 @@
             <td>0</td>
             <td>0</td>
             <td>3</td>
+          </tr>
+          <tr role="row">
+            <td><strong>Score</td>
+            <td>6/10</td>
+            <td>7/10</td>
+            <td>9/10</td>
           </tr>
         </tbody>
       </table>
@@ -208,14 +215,14 @@ $('.datepicker').datepicker({
     },
 
     series: [{
-        name: 'Vendor 1',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+        name: 'Vendor 3',
+        data: [40, 42, 48, 43, 51, 55, 59, 78]
     }, {
         name: 'Vendor 2',
-        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+        data: [36, 38, 33, 29, 37, 39, 39, 41]
     }, {
-        name: 'Vendor 3',
-        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+        name: 'Vendor 1',
+        data: [20, 22, 23, 25, 27, 29, 30, 32]
     }],
 
     responsive: {

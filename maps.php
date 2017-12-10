@@ -68,7 +68,7 @@
                       $resultscrollingalaram = mysql_query($scrollingalaram, $link);
                
                       ?>
-                        <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
+                        <marquee scrollamount="4" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
                                     
                                        
                                  
@@ -109,7 +109,7 @@
             
   <?php }elseif(($scrolingalaramval['Alarm_type']=='High')){ ?>
 
-<?php }elseif($scrolingalaramval['Alarm_type']=='High High'){ ?>
+<?php }elseif($scrolingalaramval['Alarm_type']=='High Hig   h'){ ?>
  
                       
                            <?php }?>

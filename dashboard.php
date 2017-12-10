@@ -77,7 +77,7 @@
               </tbody>-->
               <tbody>
                   <tr role="row" class="odd">      
-<td>Rico</td><td>India</td>
+<td>Rico</td><td>Canada</td>
  <td>Field 32</td>
  <td>Pad 12</td>
 <td>Well101</td>
@@ -89,7 +89,7 @@
 </tr>
 
 <tr role="row" class="odd">      
-<td>Rico</td><td>India</td>
+<td>Rico</td><td>Canada</td>
  <td>Field 32</td>
  <td>Pad 12</td>
 <td>Well102</td>
@@ -113,7 +113,7 @@
 </tr>
 
 <tr role="row" class="odd">      
-<td>Rico</td><td>India</td>
+<td>Rico</td><td>Canada</td>
  <td>Field 32</td>
  <td>Pad 12</td>
 <td>Well104</td>
@@ -149,7 +149,7 @@
 </tr>
 
 <tr role="row" class="odd">      
-<td>Rico</td><td>India</td>
+<td>Rico</td><td>Canada</td>
  <td>Field 32</td>
  <td>Pad 12</td>
 <td>Well107</td>
