@@ -211,7 +211,7 @@
               <li> <img src="dist/img/popup-filter-icon2.png"> </li>
               <li> <img src="dist/img/popup-filter-icon3.png"></li>
               <li> <img src="dist/img/popup-filter-icon4.png"> </li>
-              <li> <a href="#" class="close_btn"> <img src="dist/img/filter-close.png"></a> </li>
+              <li> <a href="#" class="close_btn" id ="close"> <img src="dist/img/filter-close.png"></a> </li>
             </ul>
             <div class="pop-up">
               <h3>Filter by client name </h3>
@@ -677,7 +677,27 @@ load(asset_id,asset_loc_lat,asset_loc_long,asset_name) ;*/
  });
 
 </script>
+<script>
+$("#submit_field_1").click(function(){
+   
+       
+       $("#overlay").hide();
+       $("#val_4").hide();
+       //$("#overlay").show();
+   
+});
+$("#open-overlay").click(function(){
+   
+   $("#overlay").show();
+ 
+   // $("#overlay").hide();
+})
 
+$("#close").click(function(){
+   
+$("#overlay").hide();  
+});
+</script>
 </body>
 </html>
 

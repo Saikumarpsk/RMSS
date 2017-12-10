@@ -9,14 +9,14 @@
 <!--          <li><a href="javascript:void(0);">Events</a></li>-->
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action1</a></li>
-              <li><a href="#">Action2</a></li>
-              <li><a href="#">Action3</a></li>
-              <li><a href="#">Action4</a></li>
+              <li><a href="#">Eqipment Management</a></li>
+              <li><a href="#">Field Service Management</a></li>
+              <li><a href="#">Application Engineering</a></li>
+              <li><a href="#">Quality Assurance Tracker</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0);"> Analytics </a></li>
-          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Mangement <i class="fa fa-angle-down"> </i></a>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="javascript:void(0);"  onclick="contactManagement()">Contract KPI</a></li>
             </ul>
