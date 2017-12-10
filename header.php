@@ -28,13 +28,15 @@
           <li class="dropdown notifications-menu"> <a href="javascript:void(0);"  class="dropdown-toggle"> <img src="dist/img/notification-icon.png"> </a> </li>
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <img src="dist/img/alarm-icon.png"> </a> </li>
           <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hidden-xs"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
+
             <small>Last Login: 15 Nov 3:00</small> </a>
+
             <ul class="dropdown-menu">
               <li class="user-header"> <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p> user <small> user@gmail.com </small> </p>
               </li>
               <li class="user-footer">
-                <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">Profile</a> </div>
+                <div class="pull-left"> <a href="javascript:void(0);" class="btn btn-default btn-flat">Profile</a> </div>
                 <div class="pull-right"> <a href="javascript:void(0);" onclick = "logout()"; class="btn btn-default btn-flat">Sign out</a> </div>
               </li>
             </ul>

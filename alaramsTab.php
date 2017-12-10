@@ -10,26 +10,26 @@
 	
 	<!-- Content Wrapper. Contains page content -->
 	  <div class="content-wrapper"> 
-               <?php include_once 'alarams.php'; ?>
-              <div class="box allpage-tabledata">
-<div class="box">
-
-      <div class="box-body">
-      <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">
-        <div class="row marg-t-15">
-            <div class="col-sm-6 text-left table-export ">
+              <section class="content">
+                  <div class="box">
+<div class="box-header">
+        <div class="row">
+            <div class="col-sm-9">
                           <h3>Current Alarms</h3>
           </div>
-          <div class="col-sm-6 text-right">
+               <div class="col-sm-3">
             <div class="input-group table-serch">
               <input type="text" name="q" class="form-control color" placeholder="Search...">
               <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
               </span> </div>
           </div>
-
         </div>
-        <div class="row marg-t-15">
+    </div>
+
+      <div class="box-body">
+      <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">        
+        <div class="row">
           <div class="col-sm-12">
             <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
                <thead>
@@ -83,9 +83,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-7 text-left">
+          <div class="col-sm-12 text-left">
             <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
-              <ul class="pagination">
+              <ul class="pagination pull-right">
                 <li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">Previous</a></li>
                 <li class="paginate_button active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li>
                 <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">2</a></li>
@@ -100,9 +100,12 @@
         </div>
       </div>
     </div>
+              </section>
+           
+ <?php include_once 'alarams.php'; ?>
     <!-- /.box-body --> 
   </div>
-              </div>
+             
 	  </div>
+        
   <?php include_once 'root_below.php'; ?>
-
