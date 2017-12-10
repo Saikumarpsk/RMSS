@@ -188,6 +188,7 @@
                     
                     
                
+
         </div>
 
       </div>
@@ -200,6 +201,7 @@
 
   
   <div class="filter-sec">
+
           <div class="filter-button"> <a href="#overlay" id="open-overlay"><img src="dist/img/filter-icon.png"></a> </div>
         </div>
         <div id="overlay">
@@ -212,14 +214,38 @@
               <li> <a href="#" class="close_btn"> <img src="dist/img/filter-close.png"></a> </li>
             </ul>
             <div class="pop-up">
-              <h3>Filter by Client</h3>
-              <input type="search" class="" placeholder="Type Client Name" >
+              <h3>Filter by client name </h3>
+              <input type="search" class="" placeholder="Type Client Name" id="checkbox1" >
               <p></p>
               <div class="arrow-down"></div>
             </div>
+              <div class="pop-up1" id ="val_2">
+            <h3> Filter by country</h3>
+            <div id="company_res"></div>
+            <input type="button" id="submit_company"  value="submit"  class="btn-primary">
+            <div class="arrow-down"></div>
+        </div>
+          
+        <div class="pop-up2" id ="val_3"     >
+          <h3>Filter by assets</h3>
+          <div id="fields_res"></div>
+          <input type="button" id="submit_field"  value="submit"  class="btn-primary" >
+          <div class="arrow-down"></div>
+        </div>
+          
+         <div class="pop-up3" id ="val_4"     >
+          <h3> Filter by  wells</h3>
+          <div id="assets_res"></div>
+          <a href="#" data-toggle="modal" data-dismiss="modal"> <input type="button" id="submit_field_1"  class="btn-primary"  value="submit"></a>
+          <div class="arrow-down"></div>
+        </div>
           </div>
         </div>
       </div>
+      </div>
+    </section>
+   
+<!--------------- all popups--------------->
    
       
    <!--    Map Green pop up  Well 1 images start -->
@@ -500,42 +526,61 @@
             
         </script>
         <script>
-         $("#checkbox1").click(function(){
+        $("#checkbox1").keyup(function(){
              
+        
              
-	$(".pop-up").hide();
-        
-        $("#val_2").show();
-	var cust_id =$("#checkbox1").val();
-	var type = 1;
-	document.cookie = cust_id;
-        
-        $.ajax({
-                    type: "POST",
-                    url: 'ajax.php',
-                    data: {
-			cust_id:cust_id,
-			condition_type: type, 
-			},
-			
-                    success: function (response) {
-                        
-                        //alert(response); 
-			$("#company_res").html(response);
-			},
-			 error: function(jqXHR, status, err){
-				alert(jqXHR.responseText);
-			    }
+            var country_val    = $("#checkbox1").val();
+             var country_length = $("#checkbox1").val().length;
+             
+             //alert(country_length);
+        if(country_length >=3)
+        {
+           
+           
+        //if(country_val  == 'ind' ||  country_val  == 'india' ||  country_val  == 'cus' ||  country_val  == 'customer'  )
+        //{
+             
+            $(".pop-up").hide();
 
-});
+            $(".pop-up1").show();
+            var cust_id =$("#checkbox1").val();
+            var type = 1;
+            document.cookie = cust_id;
+
+            $.ajax({
+                        type: "POST",
+                        url: 'ajax.php',
+                        data: {
+                            cust_id: 1 ,
+                            condition_type: type, 
+                            },
+
+                        success: function (response) {
+
+                           
+                            $("#company_res").html(response);
+                            },
+                             error: function(jqXHR, status, err){
+                                    alert(jqXHR.responseText);
+                                }
+
+    });
+
+
+
+       // }
+        
+         
         
         
-        
-        
+        }
+         
         
         
         
     });
+        
         
         </script>
         <script>
@@ -558,11 +603,11 @@ $("#submit_company").click(function(){
 	var valid_cust_id=cust_id.split(";");
 	var final_cust_id=valid_cust_id[0];
 	
-	$.post("ajax.php",  {'cust_id' : final_cust_id , condition_type: '2' , 'countries': values}  , function(response){
+	$.post("ajax.php",  {'cust_id' : 1 , condition_type: '2' , 'countries': values}  , function(response){
 		
 		
 		$("#fields_res").html(response);
-		
+	final_cust_id	
 	})
 	
 });
@@ -570,6 +615,66 @@ $("#submit_company").click(function(){
 function popup1(){
     alert();
 }
+
+</script>
+
+<script>
+$("#submit_field").click(function(){
+
+/*	var myArray = [];
+   $(":checkbox:checked").each(function() {
+       myArray.push(this.value);
+   });
+*/    
+//   var values=myArray.join(",");
+ $(".pop-up2").hide();
+ $(".pop-up3").show();
+ 
+var cust_id = document.cookie;
+
+var valid_cust_id=cust_id.split(";");
+var final_cust_id=valid_cust_id[0];
+var cheValues =$(':Checkbox:checked').map(function() {return this.value;}).get().join(',');// alert(cheValues);return false;
+
+$.post("ajax.php",  {'cust_id' : 1 , condition_type: 3 , 'fields': cheValues}  , function(response){
+$("#map").show();  
+ $("#mygraph").hide();  
+var asset_loc_lat = [];
+               var asset_loc_long = [];
+               var asset_id = [];
+var asset_name = [];
+
+ //alert(response); return false;  
+$("#assets_res").html(response);
+
+/*$("#checkDiv").append("<li><div class='check-selectall'> <input id='checkbox' type='checkbox' disabled checked ='checked'/> <label for='checkbox'> Select All </label></div></li>	"); 
+$("#asset_res").html(response);
+$.each($('#mapForm').serializeArray(), function(index, value){
+                   //alert($('[name="' + value.name + '"]').attr('lat') + $('[name="' + value.name + '"]').attr('long'));
+                   asset_loc_lat.push($('[name="' + value.name + '"]').attr('lat'));
+                   asset_loc_long.push($('[name="' + value.name + '"]').attr('long'));
+                   asset_id.push($('[name="' + value.name + '"]').val());
+   asset_name.push($('[name="' + value.name + '"]').attr('asset_name'));
+
+               });
+               console.log(asset_loc_lat);
+               console.log(asset_loc_long);
+               console.log(asset_id);
+load(asset_id,asset_loc_lat,asset_loc_long,asset_name) ;*/
+          
+
+//callMapFunction(asset_id,asset_loc_lat,asset_loc_long,asset_name);
+
+});
+
+});
+ </script> 
+ <script>
+ $("#submit_field_1").click(function(){
+     
+      //$("#val_4").hide();
+     
+ });
 
 </script>
 

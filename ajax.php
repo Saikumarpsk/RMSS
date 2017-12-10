@@ -53,12 +53,13 @@
 
 		while($val1 = mysql_fetch_array($result))
 		{
-				echo "<div>
-						 <input type='checkbox' name=checkbox class='checkbox2'  value='".$val1["cust_name_local"] ." '>
+				echo "<div class='checkbox checkbox-primary'>
+						 <input type='checkbox' class='checkbox-primary' name=checkbox class='checkbox2'  value='".$val1["cust_name_local"] ." '>
 						 <label for='checkbox1'>" .$val1["cust_name_local"] ." </label>
 
 				</div>";
 
+                                
 		}
 	}else{
 		$cust_id=$_POST['cust_id']; 
@@ -67,8 +68,12 @@
 
 		while($val1 = mysql_fetch_array($result))
 		{
-		        echo "<div>
-		                 <input type='checkbox' name=checkbox class='checkbox2'  value='".$val1["cust_name_local"] ." '>
+		        echo "
+                           
+                 </div>
+
+                            <div>
+		                 <input type='checkbox'   class='checkbox-primary'  name=checkbox class='checkbox2'  value='".$val1["cust_name_local"] ." '>
 		                 <label for='checkbox1'>" .$val1["cust_name_local"] ." </label>
 
 		        </div>";
@@ -102,7 +107,7 @@
         while($val1 = mysql_fetch_array($result))
         {
                 echo "<div>
-                         <input type='checkbox' name=checkbox class='checkbox2'   value='".$val1["field_id"] ." '>
+                         <input type='checkbox'  class='primary' name=checkbox class='checkbox2'   value='".$val1["field_id"] ." '>
                          <label for='checkbox1'>" .$val1["field_id"] ." </label>
 
                 </div>";
@@ -193,9 +198,10 @@
                 while($val1 = mysql_fetch_array($results))
                {
 
-                    echo "<input type='hidden' name=mapcords class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
-                            <li class='treeview'> <a href='#'> <span>".$val1['asset_name']."</span> <i class='fa fa-circle-o text-green pull-right'></i> <span class='pull-right-container'> <i class='fa fa-anglde-left pull-right'></i> </span> </a>";
-                  
+                   echo "<input type='hidden'  class='primary'  name=checkbox".$val1["asset_id"].'[]'." class='checkbox2'   value='".$val1["asset_id"] ." ' lat='".$val1["asset_loc_lat"]."' long='".$val1["asset_loc_long"]."' country_name='".$val1["country_id"]."' asset_name='".$val1["asset_name"]."' marker_icon=0>
+			
+                         <li  class=''> <i class='fa fa-circle text-green'></i><span>" .$val1["asset_name"] ."</span></a> </li>
+                     ";
            ?>
               <ul class="treeview-menu ">
                     <li><a href="javascript:void(0);" onclick="locateMap('<?php echo $val1["asset_id"]?>');">Location</a></li>
