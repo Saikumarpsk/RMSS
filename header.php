@@ -18,7 +18,7 @@
           <li><a href="javascript:void(0);"> Analytics </a></li>
           <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="javascript:void(0);"  onclick="contactManagement()">Kpi</a></li>
+              <li><a href="javascript:void(0);"  onclick="contactManagement()">KPI</a></li>
             </ul>
           </li>
         </ul>
@@ -29,7 +29,7 @@
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <img src="dist/img/alarm-icon.png"> </a> </li>
           <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hidden-xs"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
 
-            <small>Last Login: 15 Nov 3:00</small> </a>
+            <small>Last Login: 10 Dec 10:00</small> </a>
 
             <ul class="dropdown-menu">
               <li class="user-header"> <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">

@@ -43,9 +43,9 @@
                                   <th>UoM</th>
                                   <th>Value</th> 
                                   <th>Alarm Type</th>
-                                  <th>Acknowledge By</th>
-                                  <th>SMS Sent By</th>
-                                  <th>Email Sent By</th>
+                                  <th>Acknowledged By</th>
+                                  <th>SMS Status</th>
+                                  <th>Email Status</th>
                                 </tr>
                               </thead>
               <tbody>
@@ -63,7 +63,7 @@
                   
                                   <tr role="row" class="odd">
                                   <td>Rico</td>
-                                  <td><?php echo $alaramval['country_id']?></td>
+                                  <td><?php echo "Canada"?></td>
                                   <td><?php echo $alaramval['field']?></td>
                                   <td><?php echo $alaramval['pad']?></td>
                                   <td><?php echo "Well" .$i?></td>
