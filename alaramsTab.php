@@ -52,7 +52,7 @@
                <?php 
                         $alaram =  "select * from assets_alarams A,asset_id_list B where user_id = 1 and A.asset_id = B.asset_short_name limit 10 "; 
                         $resultalaram = mysql_query($alaram, $link);
-        
+                        $i = 1;
 			while($alaramval = mysql_fetch_assoc($resultalaram))
                                  
 			{ 
@@ -66,17 +66,21 @@
                                   <td><?php echo $alaramval['country_id']?></td>
                                   <td><?php echo $alaramval['field']?></td>
                                   <td><?php echo $alaramval['pad']?></td>
-                                  <td><?php echo $alaramval['asset_name']?></td>
+                                  <td><?php echo "Well" .$i?></td>
                                   <td><?php echo $dateformat; ?></td>
                                   <td><?php echo $alaramval['UOM']?></td>
                                   <td><?php echo $alaramval['value']?></td>
                                   <td><?php echo $alaramval['Alarm_Type']?></td>
-                                  <td><?php echo $alaramval['Acknowledged_By']?></td>
-                                  <td><?php echo $alaramval['Message']?></td>
-                                  <td><?php echo $alaramval['email_sent_by']?></td>
+                                  <td><?php echo "James" ?></td>
+                                  <td><?php echo "YES" ?></td>
+                                  <td><?php echo "YES" ?></td>
                                 
                                 </tr>
-                        <?php }?>
+                        <?php 
+                        
+                        $i++;
+                        
+                        }?>
                 
               </tbody>
             </table>
