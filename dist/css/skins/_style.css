@@ -1036,6 +1036,5 @@ img.alaramclose{  height: 26px; width: 26px;
 .marquee-scroller>ul>li { display: inline-block; margin: 0px 15px;  }
 .select-txt{  background: #FFF;
     border: solid 1px #FFF;
-    border-radius: 2px;
-    padding: 2px;
-    color: #000;};
+    border-radius: 2px; ba
+    padding: 2px; color: #000;};
