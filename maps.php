@@ -188,8 +188,8 @@
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary">Dashboard</button>
-		        <button type="button" class="btn btn-primary">Well Details</button>
+                          <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
+                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -326,8 +326,8 @@
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary">Dashboard</button>
-		        <button type="button" class="btn btn-primary">Well Details</button>
+		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
+                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -404,8 +404,8 @@
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary">Dashboard</button>
-		        <button type="button" class="btn btn-primary">Well Details</button>
+		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
+                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -481,8 +481,8 @@
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary">Dashboard</button>
-		        <button type="button" class="btn btn-primary">Well Details</button>
+		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
+                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -710,6 +710,14 @@ $("#close").click(function(){
    
 $("#overlay").hide();  
 });
+
+function showDash(){
+    window.location.href = "dashboard.php";
+}
+
+function showWell(){
+    window.location.href = "charts.php";
+}
 </script>
 </body>
 </html>
