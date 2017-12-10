@@ -53,7 +53,7 @@
                                   <th>Water Cut</th>
                                 </tr>
               </thead>
-              <tbody>
+<!--              <tbody>
                <?php while( $fetassetslist=mysql_fetch_array($runassetslist))
 			{ 
                             $var = strtotime($fetassetslist['date']);
@@ -74,6 +74,102 @@
                                 </tr>
                         <?php } ?> 
                 
+              </tbody>-->
+              <tbody>
+                  <tr role="row" class="odd">      
+<td>Rico</td><td>India</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well101</td>
+<td>2016-Feb-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>89 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>India</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well102</td>
+<td>2016-Jan-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>93 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>Russia</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well103</td>
+<td>2016-Mar-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>86 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>India</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well104</td>
+<td>2016-Aug-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>80 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>Russia</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well105</td>
+<td>2016-Sep-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>84 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>Russia</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well106</td>
+<td>2016-Dec-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>88 %</td>
+</tr>
+
+<tr role="row" class="odd">      
+<td>Rico</td><td>India</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well107</td>
+<td>2016-May-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>92 %</td>
+</tr>
+<tr role="row" class="odd">      
+<td>Rico</td><td>Russia</td>
+ <td>Field 32</td>
+ <td>Pad 12</td>
+<td>Well107</td>
+<td>2016-Jun-11 20:06:10</td>
+<td>489</td>
+<td>2000</td>
+<td>1800</td>
+ <td>90 %</td>
+</tr>
               </tbody>
             </table>
           </div>

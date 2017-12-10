@@ -18,7 +18,7 @@
           <li><a href="javascript:void(0);"> Analytics </a></li>
           <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="javascript:void(0);"  onclick="contactManagement()">Contract KPI</a></li>
+              <li><a href="javascript:void(0);"  onclick="contactManagement()">Kpi</a></li>
             </ul>
           </li>
         </ul>

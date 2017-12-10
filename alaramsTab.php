@@ -82,7 +82,7 @@
             </table>
           </div>
         </div>
-        <div class="row">
+<!--        <div class="row">
           <div class="col-sm-12 text-left">
             <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
               <ul class="pagination pull-right">
@@ -97,7 +97,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
               </section>

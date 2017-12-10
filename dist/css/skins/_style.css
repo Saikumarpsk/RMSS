@@ -195,7 +195,7 @@
 	width: 530px;
 	margin: 145px 117px 30px 495px;
 }
-.marker-sec .modal-dialog:after {
+.marker-sec .modal-dialog:afteer {
 	content: "";
 	border-right: 10px solid transparent;
 	border-top: 15px solid #030f27;
@@ -983,3 +983,54 @@ img.alaramclose{  height: 26px; width: 26px;
 .map_location4{ top: 231px;  left: 458px; position: absolute;  border-radius: 50%;}
 .map_location5{ bottom:140px; right:300px; position: absolute;  border-radius: 50%;}
 .map_location6{ top:100px; right:100px; position: absolute;  border-radius: 50%;}
+.map_pop_up{     z-index: 999;
+    width: 530px;
+    /* height: 80%; */
+    position: absolute;
+    top: 250px;
+    left: 406PX; display: none}
+.map-box{ /*width: 530px;  margin: 145px 117px 30px 495px;  */   border-left: 1px solid #0087e6;}
+.map-box-header{border-bottom-color: #030f27;background: #030f27;color: #fff;}
+.map-box-body, .map-box-footer{  position: relative;    padding: 15px;   border-bottom-color: #030f27;
+    background: #030f27;
+    opacity: .9;
+    color: #616672;}
+.map-box-footer{ }
+.map-box .arrow_left {content: "";
+    border-right: 10px solid transparent;
+    border-top: 15px solid #030f27;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 66px;
+    transform: rotate(90deg);
+    left: -23px;
+    z-index: 9999999;
+    COLOR: #fff;}
+.map-box .map-box-footer .btn-ground .btn-primary {
+    background: none; border: none; }
+.map-box .map-box-footer button.btn-ground button.btn-primary {
+    background: none;
+    border: 1px solid #038ae2 !important;
+    border-radius: 25px;
+    height: 30px;
+    margin: 0 15px;
+}
+.map-box .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #0b388b;
+    border-radius: 14px !important;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.marker-sec .progress .progress-bar-green, .progress-bar-success {
+    background-color: #285099;
+}
+.map-box .map-box-body .wellsec-bodyrighttext {
+    color: #fff;
+}
+.marquee-scroller{ }
+.marquee-scroller>ul{ margin: 0px; padding: 0px;  }
+.marquee-scroller>ul>li { display: inline-block; margin: 0px 15px;  }
