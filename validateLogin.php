@@ -21,7 +21,7 @@
 	if(!empty($userId)){
 		$_SESSION["user_id"] = $userId; 
 		$_SESSION["user_role"] = $user_role; 
-		header('Location:home.php'); 
+		header('Location:maps.php'); 
 	}else{
 		$message = 'Wrong%20Username/Password';
 		header('Location:index.php?message='.$message);

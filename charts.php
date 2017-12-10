@@ -6,7 +6,7 @@
   <?php include_once 'header.php'; ?>
     <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" style="background: #dde4f1"> <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> <img src="dist/img/arrow-menu.png" alt="" /> </span> </a> 
-    
+    <?php include_once 'alarams.php'; ?>
     <!-- Main content -->
     <section class="content">
       <div class="row">

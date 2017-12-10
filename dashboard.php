@@ -6,32 +6,7 @@
 <div class="wrapper">
   <?php include_once 'header.php'; ?>
  
-  	<aside class="main-sidebar"> 
-    <section class="sidebar">
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control color" placeholder="Search...">
-          <span class="input-group-btn">
-          <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
-          </span> </div>
-      </form>
-        <form id="mapForm">
-            
-            <div id="asset_res">
-        
-       
-                </div>
-        </form>
-        <div class="bottom-icons">
-          <ul>
-            <li class="active"> <i class="fa fa-star-o"></i></li>
-            <li > <i class="fa fa-circle-o "></i></li>          
-            <li> <i class="fa fa-exclamation-triangle"></i></li>
-          </ul>
-        </div>
-    </section>
-    <!-- /.sidebar --> 
-  </aside>
+  	 <?php include_once 'leftPanel.php'; ?>
 	
 	<!-- Content Wrapper. Contains page content -->
 	  <div class="content-wrapper"> 

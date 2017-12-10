@@ -87,7 +87,7 @@
                     
                
                  </div>
-          <div id="overlay">
+<!--          <div id="overlay">
       <div class="overlay-icons">
         <ul>
           <li class="filter_one"> <img  src="dist/img/popup-filter-icon1.png"> </li>
@@ -101,15 +101,15 @@
           <h3>Filter by Client</h3>
           
           <?php
-		while($val1 = mysql_fetch_array($cus_result))
-		{
+//		while($val1 = mysql_fetch_array($cus_result))
+//		{
 		    ?>
 		  <div>
                     <input type="checkbox" name="checkbox" id="checkbox1"  value="<?=$val1["customer_id"]?>" >
                     <label for="checkbox1"><?=isset($val1["cust_name_parent"])?$val1["cust_name_parent"]:'None'?></label>
 				  
                 </div>
-	      <?php } ?>
+	      <?php //} ?>
           <div class="arrow-down"></div>
         </div>
           
@@ -125,7 +125,7 @@
           <div id="fields_res"></div>
           <input type="button" id="submit_field"  value="submit">
           <div class="arrow-down"></div>
-        </div>
+        </div>-->
           
 <!--          <div class="pop-up" id ="val_4"     >
           <h3>Forth popup</h3>
@@ -355,7 +355,7 @@ $("#submit_company").click(function(){
 });
 
 </script>
-   
+
 </body>
 </html>
 

@@ -7,9 +7,9 @@
           <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
           </span> </div>
       </form>
-      <ul class="sidebar-menu">
-        <li class="active treeview"> <a href="#"> <span>Well 1</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
-          <ul class="treeview-menu ">
+      <ul class="sidebar-menu" id="menu1">
+        <li class="treeview"> <a href="#"> <span>Well 1</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu " id="menu2">
             <li><a href="maps.php">Location</a></li>
             <li><a href="charts.php">Panorama</a></li>
             <li><a href="#">Fluids</a></li>
