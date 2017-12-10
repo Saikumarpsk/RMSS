@@ -68,17 +68,30 @@
                       $resultscrollingalaram = mysql_query($scrollingalaram, $link);
                
                       ?>
-                                <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
+                        <marquee scrollamount="10" scrolldelay="2" direction="left" behavior="scroll" onMouseOver="this.stop()" onMouseOut="this.start();">
                                     
-                                    <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 1 : Low Low    
-                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High 
+                                       
+                                 
                                     
-                                   <img src="dist/img/img-icon-6.png" width="20" height="20"  alt="" />  Well 3 : High 
-                                     <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 4 : Low    
-                                      <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 5 : Low    
-                                   <img src="dist/img/img-icon-5.png" width="20" height="20"  alt="" />Well 6 : Low
-                                  <img src="dist/img/img-icon-4.png" width="20" height="20"  alt=""  />Well 7 : High    
-                                    <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 8 : <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High
+                          <div class="marquee-scroller">
+                        <ul class="inline">
+                            <li> <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 1 : Low Low <i class="fa fa-long-arrow-up" aria-hidden="true"></i> </li>
+                            <li>  <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 2 : High High   <i class="fa fa-times"></i>  </li>
+                             <li><img src="dist/img/img-icon-6.png" width="20" height="20"  alt="" />  Well 3 : High  <i class="fa fa-long-arrow-up" aria-hidden="true"></i>  </li>
+                              <li> <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 4 : Low     <i class="fa fa-long-arrow-up" aria-hidden="true"></i> </li>
+                               <li> <img src="dist/img/img-icon-4.png" width="20" height="20"  alt="" />Well 5 : Low    <i class="fa fa-long-arrow-up" aria-hidden="true"></i></li>
+                                <li> <img src="dist/img/img-icon-5.png" width="20" height="20"  alt="" />Well 6 : Low
+                                 <i class="fa fa-long-arrow-down" aria-hidden="true"></i> </li>
+                                 
+                                 <li> <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 7 :  Low Low   <i class="fa fa-long-arrow-up"></i></li>
+                                 
+                                 <li> <img src="dist/img/img-icon-2.png" width="20" height="20"  alt=""  />  Well 8 :  High High   <i class="fa fa-times"></i></li>
+                        </ul> 
+                      </div>         
+                                    
+                                      
+                                   
+                                    
                                     
                                     
                      <?php
