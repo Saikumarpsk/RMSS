@@ -39,7 +39,7 @@
         <thead>
           <tr>
 
-            <th width="40%" > <div">
+            <th width="25%" > <div">
                     <select class="select-txt">          
                          <option>Year</option>
                         <option>2014</option>
@@ -72,9 +72,9 @@
           </th>
         
         
-          <th width="28%"> Vender 1</th>
-          <th width="28%"> Vender 2</th>
-          <th width="32%"> Vender 3</th>
+          <th width="25%"> Vender 1</th>
+          <th width="25%"> Vender 2</th>
+          <th width="25%"> Vender 3</th>
         </tr>
           </thead>
         
