@@ -1138,6 +1138,6 @@ color: #FFF;
 
 .map-location img.set-img {
 	width: 100% !important;
-	height: 100vh !important;
+	height: calc(100vh - 138px);
 }
 
