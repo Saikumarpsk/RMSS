@@ -42,9 +42,9 @@
         <ul class="nav navbar-nav">
           <li class="dropdown notifications-menu"> <a href="javascript:void(0);"  class="dropdown-toggle"> <img src="dist/img/notification-icon.png"> </a> </li>
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <img src="dist/img/alarm-icon.png"> </a> </li>
-          <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hiddenS-xs"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
+          <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hidden-xs hidden-sm hidden-sms"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
 
-            <small class="hidden-xs">Last Login: 10 Dec 10:00</small> </a>
+            <small class="hidden-xs hidden-sm hidden-sms">Last Login: 10 Dec 10:00</small> </a>
 
             <ul class="dropdown-menu">
               <li class="user-header"> <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">

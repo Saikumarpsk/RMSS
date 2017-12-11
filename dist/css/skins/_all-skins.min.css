@@ -73,20 +73,18 @@
 }
 
 @media (max-width:767px) {
-	
-	.navbar-collapse a{
-		margin: 0 !important;
-	}
-	._logo {
-		width: auto !important;
+.navbar-collapse a {
+	margin: 0 !important;
+}
+._logo {
+	width: auto !important;
 }
 .sidebar-toggle {
-    top: 250px !important;
-    position: fixed;
-    z-index: 9999;
-    left: 20px !important;
+	top: 250px !important;
+	position: fixed;
+	z-index: 9999;
+	left: 20px !important;
 }
-	
 .skin-blue .main-header .navbar .dropdown-menu li.divider {
 	background-color: rgba(255,255,255,0.1)
 }
@@ -112,33 +110,30 @@
 	background: transparent
 }
 .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-	background: rgba(3,17,41,1); 
+	background: rgba(3,17,41,1);
 }
 .skin-blue .user-panel>.info, .skin-blue .user-panel>.info>a {
 	color: #fff
 }
 .skin-blue .sidebar-menu>li.header {
 	color: #4b646f;
-	
 }
 .skin-blue .sidebar-menu>li>a {
 	border-left: 3px solid transparent;
 	color: #fff;
-    background: url(../../img/arrow-right.png) no-repeat 5px 12px;
-    padding-left: 30px;
-    /* border-left-color: #3c8dbc; */
+	background: url(../../img/arrow-right.png) no-repeat 5px 12px;
+	padding-left: 30px;/* border-left-color: #3c8dbc; */
 }
 .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
 	color: #fff;
-	background:url(../../img/arrow-right.png) no-repeat 5px 14px; padding-left: 30px;
-	/*border-left-color: #3c8dbc*/
+	background: url(../../img/arrow-right.png) no-repeat 5px 14px;
+	padding-left: 30px;/*border-left-color: #3c8dbc*/
 }
 .skin-blue .sidebar-menu>li>.treeview-menu {
 	padding: 0px 0px 0px 20px;
 	/*background: #2c3b41;*/
 	border-top: solid 1px #5c96ff;
-    border-bottom: solid 1px #5c96ff;
-	
+	border-bottom: solid 1px #5c96ff;
 }
 .skin-blue .sidebar a {
 	color: #b8c7ce
@@ -149,33 +144,32 @@
 .skin-blue .treeview-menu>li>a {
 	color: #8aa4af;
 	background: url(../../img/inside-arrow.png) no-repeat 0px 17px;
-    padding-left: 30px;
-    /* border-left-color: #3c8dbc; */
+	padding-left: 30px;/* border-left-color: #3c8dbc; */
 }
 .skin-blue .treeview-menu>li.active>a, .skin-blue .treeview-menu>li>a:hover {
 	color: #2799c7;
 }
 .skin-blue .sidebar-form {
 	border-radius: 3px;
-    border: 1px solid transparent;
-    margin: 10px 10px;
+	border: 1px solid transparent;
+	margin: 10px 10px;
 }
 .skin-blue .sidebar-form input[type="text"], .skin-blue .sidebar-form .btn {
 	box-shadow: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-bottom: solid 1px #5c96ff;
-    height: 35px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-bottom: solid 1px #5c96ff;
+	height: 35px;
 }
 .skin-blue .sidebar-form input[type="text"] {
 	color: #5c96ff;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0px;
 }
 .skin-blue .sidebar-form input[type="text"]:focus, .skin-blue .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
-	background-color:transparent;
+	background-color: transparent;
 	color: #666
 }
 .skin-blue .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
@@ -399,6 +393,9 @@
 	color: #fff;
 	border-bottom: 0 solid transparent;
 	border-right: none
+}
+.main-sidebar, .left-side {
+	top: 0;
 }
 .skin-black .main-header>.logo:hover {
 	background-color: #1f1f1f
@@ -1648,8 +1645,54 @@
 }
 }
 .allarm-events {
-    padding: 10px;
-    background-color: #0a3a8e;
-    color: #fff;
-    font-size: 15px;
+	padding: 10px;
+	background-color: #0a3a8e;
+	color: #fff;
+	font-size: 15px;
+}
+
+@media only screen and (max-width:1024px) and (min-width:800px) {
+.skin-blue .main-header .navbar .nav>li>a {
+	font-size: 13px;
+	padding: 10px !important
+}
+._logo {
+	width: 130px !important;
+}
+.user-menu {
+	width: 0 !important;
+	padding-right: 15px !important;
+}
+.hidden-sms {
+	display: none !important;
+}
+}
+
+@media only screen and (max-width:1230px) and (min-width:990px) {
+.skin-blue .main-header .navbar .nav>li>a {
+	font-size: 11px !important;
+	padding: 10px !important
+}
+._logo {
+	width: 250px !important;
+}
+.hidden-sms {
+	display: none !important;
+}
+.user-menu {
+	padding-right: 55px !important;
+}
+}
+
+@media only screen and (max-width:1024px) and (min-width:1230px) {
+.hidden-sms {
+	display: block !important;
+}
+._logo {
+	width: 130px !important;
+}
+.user-menu {
+	width: 250px !important;
+	padding-right: 10px !important;
+}
 }
