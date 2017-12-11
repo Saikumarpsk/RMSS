@@ -1,9 +1,20 @@
+
+
+
 <header class="main-header">
     <nav class="navbar navbar-static-top">
-      <div class="_logo"><a href="maps.php"><img src="dist/img/Kellton-logo.png" alt="" /></a> </div>
-      <!-- Sidebar toggle button-->
-      <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-        <ul class="nav navbar-nav">
+     
+     
+        <div class="navbar-header">
+         <div class="_logo"><a href="maps.php"><img src="dist/img/Kellton-logo.png" alt="" /></a> </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse pull-left collapse" id="navbar-collapse" aria-expanded="false" style="height: 1px;">
+           <ul class="nav navbar-nav">
           <li><a href="javascript:void(0);" onclick="dashboasrd()">Dashboard</a></li>
           <li><a href="javascript:void(0);" onclick="alaramstab()">Alarms</a></li>
 <!--          <li><a href="javascript:void(0);">Events</a></li>-->
@@ -23,13 +34,17 @@
           </li>
         </ul>
       </div>
-      <div class="navbar-custom-menu">
+          
+      
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <li class="dropdown notifications-menu"> <a href="javascript:void(0);"  class="dropdown-toggle"> <img src="dist/img/notification-icon.png"> </a> </li>
           <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#product_view1"> <img src="dist/img/alarm-icon.png"> </a> </li>
-          <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hidden-xs"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
+          <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/user-icon.png" class="user-image" alt="User Image"> <span class="hiddenS-xs"> Welcome, User <i class="fa fa-angle-down"></i></span> <br>
 
-            <small>Last Login: 10 Dec 10:00</small> </a>
+            <small class="hidden-xs">Last Login: 10 Dec 10:00</small> </a>
 
             <ul class="dropdown-menu">
               <li class="user-header"> <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -44,8 +59,16 @@
           <li></li>
         </ul>
       </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+         
+        
     </nav>
   </header>
+
+
+
+<!-- header-->
 
 <script>
    function logout(){

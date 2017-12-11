@@ -305,10 +305,10 @@ color:#ccc
 }
 }
 .navbar-toggle {
-	color: #fff;
+	color: #1451c1;
 	border: 0;
 	margin: 0;
-	padding: 15px 15px
+	padding: 35px 15px 15px 15px;
 }
 
 @media (max-width:991px) {

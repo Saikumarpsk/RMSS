@@ -48,15 +48,15 @@
 	font-style: normal;
 }
 ._logo {
-	font-size: 24px;
-	padding: 12px 18px;
-	display: inline;
-	float: left;
-	background-color: #f8f8f8;
-	color: #1350be;
-	text-transform: uppercase;
-	width: 252px;
-	text-align: center;
+    font-size: 24px;
+    padding: 12px 18px;
+    display: inline;
+    float: left;
+    background-color: #f8f8f8;
+    color: #1350be;
+    text-transform: uppercase;
+    width: 252px;
+    text-align: center;
 }
 ._logo > a {
 }
