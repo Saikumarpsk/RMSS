@@ -163,7 +163,7 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>20%</p>
+		              <p>39%</p>
 		            </div>
 		          </div>
 		          <div class="row">
@@ -173,7 +173,7 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>20%</p>
+		              <p>32%</p>
 		            </div>
 		          </div>
 		          <div class="row">
@@ -183,7 +183,7 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>20%</p>
+		              <p>40%</p>
 		            </div>
 		          </div>
 		        </div>
@@ -311,7 +311,9 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>38%</p>
+
+		              <p>40%</p>
+
 		            </div>
 		          </div>
 		          <div class="row">
@@ -321,7 +323,9 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>39%</p>
+
+		              <p>40%</p>
+
 		            </div>
 		          </div>
 		        </div>
@@ -379,7 +383,9 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>39%</p>
+
+		              <p>40%</p>
+
 		            </div>
 		          </div>
 		          <div class="row">
@@ -389,7 +395,9 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>29%</p>
+
+		              <p>40%</p>
+
 		            </div>
 		          </div>
 		          <div class="row">
@@ -399,7 +407,9 @@
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>38%</p>
+
+		              <p>40%</p>
+
 		            </div>
 		          </div>
 		        </div>
