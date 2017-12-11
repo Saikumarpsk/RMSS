@@ -1686,7 +1686,7 @@
 
 @media only screen and (max-width:1024px) and (min-width:1230px) {
 .hidden-sms {
-	display: block !important;
+	display: none !important;
 }
 ._logo {
 	width: 252px !important;

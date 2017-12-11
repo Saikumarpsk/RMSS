@@ -31,6 +31,7 @@
       <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap text-center">        
         <div class="row">
           <div class="col-sm-12">
+              
             <table id="example1" class="table table-bordered table-striped dataTable dashboardt-table" role="grid" aria-describedby="example1_info">
                <thead>
                                 <tr role="row">
@@ -83,8 +84,8 @@
                         }?>
                 
               </tbody>
-            </table>
-          </div>
+            </table> 
+         </div>
         </div>
 <!--        <div class="row">
           <div class="col-sm-12 text-left">

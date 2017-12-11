@@ -55,7 +55,7 @@
 	background-color: #f8f8f8;
 	color: #1350be;
 	text-transform: uppercase;
-	width: 19%;
+	width: 252px;
 	text-align: center;
 }
 ._logo > a {
@@ -1138,6 +1138,6 @@ color: #FFF;
 
 .map-location img.set-img {
 	width: 100% !important;
-	height: calc(100vh - 130px);
+	height: calc(100vh - 135px);
 }
 
