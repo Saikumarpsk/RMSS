@@ -32,7 +32,8 @@
    <?php include_once 'alarams.php'; ?>
    <?php //include_once 'alaramsTab.php'; ?>
    <?php //include_once 'contactManagement.php'; ?>
-	  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> <img src="dist/img/arrow-menu.png" alt="" /> </span> </a>
+	  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class=""> 
+                  <img src="dist/img/arrow-menu.png" alt="" /> </span> </a>
     
           
           
@@ -43,7 +44,7 @@
         <div class="row">
             <div class="col-md-12" style="margin:-5px 0px 0px 0px; padding: 0px;" >
    			<div class="map-location">
-   			 <img class="img-responsive" src="dist/img/map.jpg"/>
+   			 <img class="set-img"  src="dist/img/map.jpg"/>
    			<div class="map_location1"> <img src="dist/img/img-icon-1.png" width="80" height="80"  alt="" data-toggle="modal" data-target="#product_vieworange" /></div>
   			  <div class="map_location2"> <img src="dist/img/img-icon-2.png" width="80" height="80" alt="" data-toggle="modal" data-target="#product_viewred" /></div>
 <!--  			  <div class="map_location3"> <img src="dist/img/img-icon-3.png" width="80" height="80" alt="" /></div>-->
