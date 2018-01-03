@@ -1,7 +1,7 @@
 <?php
 
 	
-	    if (!$link = mysql_connect('127.0.0.1', 'root', 'root123')) 
+	    if (!$link = mysql_connect('127.0.0.1', 'root', 'K@#L&*!)%')) 
 	    {
 		echo 'Could not connect to mysql';
 		exit;
