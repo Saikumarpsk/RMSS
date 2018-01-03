@@ -33,6 +33,11 @@
               <li><a href="#">Quality Assurance Tracker</a></li>
             </ul>
           </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="javascript:void(0);"  onclick="contactManagement()">KPI</a></li>
+            </ul>
+          </li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">LiftEd <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">CNOOC Workflow</a></li>
@@ -40,11 +45,7 @@
             </ul>
           </li>
                     <li><a href="javascript:void(0);">Report Center</a></li>
-          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="javascript:void(0);"  onclick="contactManagement()">KPI</a></li>
-            </ul>
-          </li>
+          
         </ul>
       </div>
           

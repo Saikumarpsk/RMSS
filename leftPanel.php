@@ -11,89 +11,65 @@
         <li class="treeview"> <a href="#"> <span>Well 1</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu " id="menu2">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
         <li class="treeview"> <a href="#"> <span>Well 2</span> <i class="fa fa-circle-o text-danger pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
         <li class="treeview"> <a href="#"> <span>Well 3</span> <i class="fa fa-circle-o text-yellow pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
         <li class="treeview"> <a href="#"> <span>Well 4</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
         <li class="treeview"> <a href="#"> <span>Well 5</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
          <li class="treeview"> <a href="#"> <span>Well 6</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu ">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
          <li class="treeview"> <a href="#"> <span>Well 7</span> <i class="fa fa-circle-o text-green pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu ">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
         <li class="treeview"> <a href="#"> <span>Well 8</span> <i class="fa fa-circle-o text-yellow pull-right"></i> <span class="pull-right-container"> <i class="fa fa-anglde-left pull-right"></i> </span> </a>
           <ul class="treeview-menu ">
             <li><a href="maps.php">Location</a></li>
-            <li><a href="charts.php">Panorama</a></li>
-            <li><a href="#">Fluids</a></li>
-            <li><a href="#">Reservoir</a></li>
-            <li><a href="#">Wellbore</a></li>
-            <li><a href="#">Analysis</a></li>
-            <li><a href="#">Remove</a></li>
+            <li><a href="charts.php">Well Details</a></li>
+            <li><a href="#">ESP Management</a></li>
+            <li><a href="#">Create New AFE</a></li>
           </ul>
         </li>
       </ul>
