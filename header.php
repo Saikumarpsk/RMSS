@@ -16,8 +16,15 @@
         <div class="navbar-collapse pull-left collapse" id="navbar-collapse" aria-expanded="false" style="height: 1px;">
            <ul class="nav navbar-nav">
           <li><a href="javascript:void(0);" onclick="dashboasrd()">Dashboard</a></li>
-          <li><a href="javascript:void(0);" onclick="alaramstab()">Alarms</a></li>
-<!--          <li><a href="javascript:void(0);">Events</a></li>-->
+<!--          <li><a href="javascript:void(0);" onclick="alaramstab()">Alarms</a></li>-->
+          <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Advisory 365<i class="fa fa-angle-down"> </i></a>
+               <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Trendz</a></li>
+              <li><a href="javascript:void(0);" onclick="alaramstab()">Alarms</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operations <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Eqipment Management</a></li>
@@ -26,7 +33,13 @@
               <li><a href="#">Quality Assurance Tracker</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0);"> Analytics </a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">LiftEd <i class="fa fa-angle-down"> </i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">CNOOC Workflow</a></li>
+              <li><a href="#">Expert Advice</a></li>
+            </ul>
+          </li>
+                    <li><a href="javascript:void(0);">Report Center</a></li>
           <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Contract Management <i class="fa fa-angle-down"> </i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="javascript:void(0);"  onclick="contactManagement()">KPI</a></li>
