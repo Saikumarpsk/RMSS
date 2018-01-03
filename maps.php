@@ -137,60 +137,53 @@
 		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
 		        <div class="col-lg-6 wel-sec">
 		          <h3><span>W</span>ell No:2 <!--i class="fa fa-wifi"--></i></h3>
-		          <p><span>Status: <img src="dist/img/status-img.png"> Stopped</span> <span> | Alarm: 3:00 PM</span></p>
-		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Stopped</span> <span> | Alarm: High</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C<span> | Local Time: 3:30 PM</span></p>
 		        </div>
 		      </div>
 		    </div>
 		    <div class="modal-body">
 		      <div class="row">
 		        <div class="col-lg-6">
-		          <p>Runlife; Total downtime :</p>
-		          <p>Last event; downtime : </p>
-		          <p>Type of pump icon :</p>
-		          <p>Monthy Production Rate:</p>
-		          <p>Yearly Production Rate:</p>
-		          <p>Flow Rate:</p>
+		          <p>Type of Pump:</p>
+		          <p>Oil Production rate: </p>
+		          <p>Cumulative Monthly Production:</p>
+		          <p>Cumulative Yearly Production:</p>
+		          <p>Runlife:</p>
+		          <p>Last Downtime:</p>
+                          <p>Cumulative Downtime:</p>
 		        </div>
 		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
-		          <p>18</p>
-		          <p>14 </p>
-		          <p>lorem Ipsum</p>
+		          <p>ESP</p>
+		          <p>1600 bbl/day</p>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>39%</p>
+		              <p>45%</p>
 		            </div>
 		          </div>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>32%</p>
+		              <p>60%</p>
 		            </div>
 		          </div>
-		          <div class="row">
-		            <div class="col-lg-9">
-		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
-		              </div>
-		            </div>
-		            <div class="col-lg-2 progress-text">
-		              <p>40%</p>
-		            </div>
-		          </div>
+                           <p>260 Days</p>
+                           <p>3 Days</p>
+                           <p>25 days</p>
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-                          <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
-                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
+<!--		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>-->
+                        <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -275,64 +268,53 @@
 		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
 		        <div class="col-lg-6 wel-sec">
 		          <h3><span>W</span>ell No:1 <i class="fa fa-wifi"></i></h3>
-		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 3:00 PM</span></p>
-		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: Low</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C<span> | Local Time: 3:00 PM</span></p>
 		        </div>
 		      </div>
 		    </div>
 		    <div class="modal-body">
 		      <div class="row">
 		        <div class="col-lg-6">
-		          <p>Runlife; Total downtime :</p>
-		          <p>Last event; downtime : </p>
-		          <p>Type of pump icon :</p>
-		          <p>Monthy Production Rate:</p>
-		          <p>Yearly Production Rate:</p>
-		          <p>Flow Rate:</p>
+		          <p>Type of Pump:</p>
+		          <p>Oil Production rate: </p>
+		          <p>Cumulative Monthly Production:</p>
+		          <p>Cumulative Yearly Production:</p>
+		          <p>Runlife:</p>
+		          <p>Last Downtime:</p>
+                          <p>Cumulative Downtime:</p>
 		        </div>
 		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
-		          <p>3</p>
-		          <p>2017-12-06</p>
-		          <p>lorem Ipsum</p>
+		          <p>ESP</p>
+		          <p>1600 bbl/day</p>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>40%</p>
+		              <p>45%</p>
 		            </div>
 		          </div>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-
-		              <p>40%</p>
-
+		              <p>60%</p>
 		            </div>
 		          </div>
-		          <div class="row">
-		            <div class="col-lg-9">
-		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
-		              </div>
-		            </div>
-		            <div class="col-lg-2 progress-text">
-
-		              <p>40%</p>
-
-		            </div>
-		          </div>
+                           <p>260 Days</p>
+                           <p>3 Days</p>
+                           <p>25 days</p>
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
-                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
+<!--		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>-->
+                        <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -357,66 +339,53 @@
 		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
 		        <div class="col-lg-6 wel-sec">
 		          <h3><span>W</span>ell No:3 <i class="fa fa-wifi"></i></h3>
-		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 2:30 PM</span></p>
-		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: High</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C <span> | Local Time: 2:30 PM</span></p>
 		        </div>
 		      </div>
 		    </div>
 		    <div class="modal-body">
 		      <div class="row">
 		        <div class="col-lg-6">
-		          <p>Runlife; Total downtime :</p>
-		          <p>Last event; downtime : </p>
-		          <p>Type of pump icon :</p>
-		          <p>Monthy Production Rate:</p>
-		          <p>Yearly Production Rate:</p>
-		          <p>Flow Rate:</p>
+		          <p>Type of Pump:</p>
+		          <p>Oil Production rate: </p>
+		          <p>Cumulative Monthly Production:</p>
+		          <p>Cumulative Yearly Production:</p>
+		          <p>Runlife:</p>
+		          <p>Last Downtime:</p>
+                          <p>Cumulative Downtime:</p>
 		        </div>
 		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
-		          <p>3</p>
-		          <p>2017-12-06</p>
-		          <p>lorem Ipsum</p>
+		          <p>ESP</p>
+		          <p>1500 bbl/day</p>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 30%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-
-		              <p>40%</p>
-
+		              <p>30%</p>
 		            </div>
 		          </div>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-
-		              <p>40%</p>
-
+		              <p>50%</p>
 		            </div>
 		          </div>
-		          <div class="row">
-		            <div class="col-lg-9">
-		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
-		              </div>
-		            </div>
-		            <div class="col-lg-2 progress-text">
-
-		              <p>40%</p>
-
-		            </div>
-		          </div>
+                           <p>260 Days</p>
+                           <p>3 Days</p>
+                           <p>25 days</p>
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
-                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
+<!--		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>-->
+                        <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
@@ -440,25 +409,25 @@
 		        <div class="col-lg-5"><img src="dist/img/popuop-headimg.png"></div>
 		        <div class="col-lg-6 wel-sec">
 		          <h3><span>W</span>ell No:8 <i class="fa fa-wifi"></i></h3>
-		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: 2:00 PM</span></p>
-		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C</p>
+		          <p><span>Status: <img src="dist/img/status-img.png"> Working</span> <span> | Alarm: Low</span></p>
+		          <p><img src="dist/img/temp-img.png"> 30<span class="temparature-text">0</span> C <span> | Local Time: 2:00 PM</span></p>
 		        </div>
 		      </div>
 		    </div>
 		    <div class="modal-body">
 		      <div class="row">
 		        <div class="col-lg-6">
-		          <p>Runlife; Total downtime :</p>
-		          <p>Last event; downtime : </p>
-		          <p>Type of pump icon :</p>
-		          <p>Monthy Production Rate:</p>
-		          <p>Yearly Production Rate:</p>
-		          <p>Flow Rate:</p>
+		          <p>Type of Pump:</p>
+		          <p>Oil Production rate: </p>
+		          <p>Cumulative Monthly Production:</p>
+		          <p>Cumulative Yearly Production:</p>
+		          <p>Runlife:</p>
+		          <p>Last Downtime:</p>
+                          <p>Cumulative Downtime:</p>
 		        </div>
 		        <div class="col-lg-6 wellsec-bodyrighttext box-body">
-		          <p>3</p>
-		          <p>2017-12-06</p>
-		          <p>lorem Ipsum</p>
+		          <p>ESP</p>
+		          <p>1600 bbl/day</p>
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
@@ -472,28 +441,21 @@
 		          <div class="row">
 		            <div class="col-lg-9">
 		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
+		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> </div>
 		              </div>
 		            </div>
 		            <div class="col-lg-2 progress-text">
-		              <p>40%</p>
+		              <p>60%</p>
 		            </div>
 		          </div>
-		          <div class="row">
-		            <div class="col-lg-9">
-		              <div class="progress">
-		                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> </div>
-		              </div>
-		            </div>
-		            <div class="col-lg-2 progress-text">
-		              <p>40%</p>
-		            </div>
-		          </div>
+                           <p>260 Days</p>
+                           <p>3 Days</p>
+                           <p>25 days</p>
 		        </div>
 		      </div>
 		      <div class="btn-ground">
-		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>
-                          <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
+<!--		        <button type="button" class="btn btn-primary" onclick="showDash()">Dashboard</button>-->
+                        <button type="button" class="btn btn-primary" onclick="showWell()">Well Details</button>
 		      </div>
 		    </div>
 		  </div>
